@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './home.css';
 import { BsFillPersonFill, BsCart3 } from 'react-icons/bs';
 import {AiOutlineDown} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const menu = ['Home', 'Product', 'Services', 'Blog', 'Company', 'Contact'];
@@ -24,9 +25,9 @@ function Navbar() {
                             <li key={index}>
                                 {item === 'Company' ? (
                                 <>
-                                    <a href="#" onClick={toggleDropdown}>
+                                   <div className='menu-items' onClick={toggleDropdown}> 
                                     {item} <AiOutlineDown className='down'/>
-                                    </a>
+                                    </div>
                                     {isDropdownOpen && (
                                     <div className="dropdown">
                                         {dropdownmenu.map((items, index) =>(
@@ -36,7 +37,7 @@ function Navbar() {
                                     )}
                                 </>
                                 ) : (
-                                <a href="#">{item}</a>
+                                <Link to={`/${item.toLowerCase()}`} className='menu-items'>{item}</Link>
                                 )}
                             </li>
                             ))}
