@@ -37,7 +37,7 @@ function Navbar() {
                                     )}
                                 </>
                                 ) : (
-                                <Link to={`/${item.toLowerCase()}`} className={Styles.menu_items}>{item}</Link>
+                                <Link to={`/${item.toLowerCase()}`} className={Styles.menu}>{item}</Link>
                                 )}
                             </li>
                             ))}
