@@ -1,0 +1,39 @@
+.navigation{
+    background-image: url("../../images/services.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_section{
+    padding: 220px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 22px;
+}
+
+.button{
+    background-color: #F57C51;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+
+.title{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.wellcome_message{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+

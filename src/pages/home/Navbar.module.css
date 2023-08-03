@@ -4,21 +4,10 @@
     box-sizing: border-box;
 }
 
-.navigation{
-    background-image: url("../../images/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-.navigation:nth-child(1){
-    align-items: center;
-}
 
 .navbar{
     width: 100%;
-    padding: 29px 90px;
+    padding: 8px 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -40,7 +29,7 @@
     gap: 45.32px;
 }
 
-.menu ul .menu-items{
+.menu ul .menu_items, menu{
     color: white;
     padding: 0;
 }
@@ -68,36 +57,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.hero-section{
-    padding: 115px 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-transform: capitalize;
-    gap: 22px;
-}
-
-.title{
-    font-size: 60px;
-    color: white;
-    text-align: center;
-}
-
-.wellcome-message{
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
-
-button{
-    background-color: #F57C51;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
 }
 
 a{

@@ -1,25 +1,25 @@
-import '../home/home.css';
 import Navbar from '../home/Navbar';
+import Styles from './Services.module.css'
 
-function Product() {
+function Services() {
     return (
       <>
-        <div className="header">
-            <div className="navigation">
+        <div className={Styles.header}>
+            <div className={Styles.navigation}>
                 <Navbar />
-                {/* <div className="hero-section">
-                    <div className="title">discover your perfect website <br /> template</div>
-                    <div className="wellcome-message">
+                <div className={Styles.hero_section}>
+                    <div className={Styles.title}>Our Servises</div>
+                    {/* <div className={Styles.wellcome_message}>
                         Welcome to Darkprog, where creativity meets functionality. We offer a curated <br /> 
                         collection of exquisite website templates to cater to all your online needs. 
                     </div>
-                    <button>Browse Template</button>
-                </div> */}
+                    <button className={Styles.button}>Browse Template</button> */}
+                </div>
             </div>
         </div>
       </>
     );
   }
 
-export default Product;
+export default Services;
   
