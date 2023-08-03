@@ -1,5 +1,5 @@
 import Navbar from '../home/Navbar';
-import './product.css'
+
 
 function Product() {
     return (
