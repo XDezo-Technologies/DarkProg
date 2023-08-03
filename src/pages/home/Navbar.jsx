@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './home.css';
+import Styles from './Navbar.module.css';
 import { BsFillPersonFill, BsCart3 } from 'react-icons/bs';
 import {AiOutlineDown} from 'react-icons/ai';
 import { Link } from 'react-router-dom';
@@ -15,21 +15,21 @@ function Navbar() {
     };
     return (
       <>
-                <div className="navbar">
-                    <div className="logo">
+                <div className={Styles.navbar}>
+                    <div className={Styles.logo}>
                         DarkProg
                     </div>
-                    <div className="menu">
+                    <div className={Styles.menu}>
                         <ul>
                             {menu.map((item, index) => (
                             <li key={index}>
                                 {item === 'Company' ? (
                                 <>
-                                   <div className='menu-items' onClick={toggleDropdown}> 
+                                   <div className={Styles.menu_items} onClick={toggleDropdown}> 
                                     {item} <AiOutlineDown className='down'/>
                                     </div>
                                     {isDropdownOpen && (
-                                    <div className="dropdown">
+                                    <div className={Styles.dropdown}>
                                         {dropdownmenu.map((items, index) =>(
                                             <li key={index}>{items}</li>
                                         ))}
@@ -37,13 +37,13 @@ function Navbar() {
                                     )}
                                 </>
                                 ) : (
-                                <Link to={`/${item.toLowerCase()}`} className='menu-items'>{item}</Link>
+                                <Link to={`/${item.toLowerCase()}`} className={Styles.menu_items}>{item}</Link>
                                 )}
                             </li>
                             ))}
                         </ul>
                     </div>
-                    <div className="profile">
+                    <div className={Styles.profile}>
                         <BsFillPersonFill className="icons" />
                         <BsCart3 className="icons" />
                     </div>
