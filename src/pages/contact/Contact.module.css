@@ -1,5 +1,5 @@
 .navigation{
-    background-image: url("../../images/bg.png");
+    background-image: url("../../images/contact.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -7,7 +7,7 @@
 }
 
 .hero_section{
-    padding: 115px 0;
+    padding: 220px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,3 +37,9 @@
     text-align: center;
 }
 
+
+.heading{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1rem;
+}
