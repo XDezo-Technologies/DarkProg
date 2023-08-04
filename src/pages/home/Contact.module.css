@@ -1,20 +1,34 @@
 span{
-    color: F57C51;
+    color: #F57C51;
 }
+
+.contain{
+    padding: 30px 90px ;
+}
+
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.left-content {
+.left_content {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    padding: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    padding-top: 30px;
 }
 
-.right-content {
+.info{
+    padding-bottom: 19px;
+    font-weight: bold;
+}
+
+.right_content {
     flex: 1;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 form {
@@ -24,6 +38,7 @@ form {
 
 label {
     margin-bottom: 5px;
+    height: 61px;
 }
 
 input, textarea {
@@ -31,13 +46,88 @@ input, textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+textarea{
+    height: 133px;
+}
+
+.btn1{
+    display: flex;
+    justify-content: end;
+}
+
+.heading1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+    padding: 30px 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .middle, .right{
+    flex: 1;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.middle, .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.darkprog{
+    font-size: 40px;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.designer{
+    font-weight: bold;
+}
+
+.about, .li{
+    opacity: 56%;
+}
+
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 90px;
+    justify-content: space-between;
+}
+
+.rights, .help, center, .policy, .terms{
+    flex: 1;
+}
+
+.help{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
 }
