@@ -5,7 +5,7 @@ import {AiOutlineDown} from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    const menu = ['Home', 'Product', 'Services', 'Blog', 'Company', 'Contact'];
+    const menu = ['Home', 'Products', 'Services', 'Blog', 'Company', 'Contact'];
     const dropdownmenu = ['About Us', 'Our Team', 'Mission', 'Vision'];
 
     const [isDropdownOpen, setDropdownOpen] = useState(false);

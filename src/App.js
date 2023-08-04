@@ -1,8 +1,9 @@
 import Header from './pages/home/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
-import Product from './pages/product/Product';
+import Products from './pages/product/Products';
 import Services from './pages/services/Services';
 import Contact from './pages/contact/Contact';
+import Blog from './pages/blog/Blog';
 
 
 
@@ -13,9 +14,10 @@ function App() {
         <Routes>
           <Route path="/" Component={Header} />
           <Route path="/home" Component={Header} />
-          <Route path="/product" Component={Product} />
+          <Route path="/products" Component={Products} />
           <Route path="/services" Component={Services} />
           <Route path="/contact" Component={Contact} />
+          <Route path="/blog" Component={Blog} />
         </Routes>
     </BrowserRouter>
     </>
