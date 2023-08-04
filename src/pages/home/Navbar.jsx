@@ -37,15 +37,15 @@ function Navbar() {
                                     )}
                                 </>
                                 ) : (
-                                <Link to={`/${item.toLowerCase()}`} className={Styles.menu}>{item}</Link>
+                                <Link to={`/${item.toLowerCase()}`} className={Styles.menu_items}>{item}</Link>
                                 )}
                             </li>
                             ))}
                         </ul>
                     </div>
                     <div className={Styles.profile}>
-                        <BsFillPersonFill className="icons" />
-                        <BsCart3 className="icons" />
+                        <BsFillPersonFill className={Styles.icons} />
+                        <BsCart3 className={Styles.icons} />
                     </div>
                 </div>
       </>

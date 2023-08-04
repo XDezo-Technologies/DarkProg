@@ -1,5 +1,6 @@
 import Styles from './Header.module.css';
 import Navbar from './Navbar';
+import Product from './Product';
 
 function Header() {
     return (
@@ -16,6 +17,39 @@ function Header() {
                     <button className={Styles.button}>Browse Template</button>
                 </div>
             </div>
+        </div>
+
+        <div className={Styles.work}>
+          <div className={Styles.unique}>
+            <div className={Styles.icon}></div>
+            <div className={Styles.content}>
+              <div className={Styles.description}>Expert Developer</div>
+              <div className={Styles.desc}>Designed by <br /> Expert developer</div>
+            </div>
+          </div>
+
+          <div className={Styles.unique}>
+            <div className={Styles.icon}></div>
+            <div className={Styles.content}>
+              <div className={Styles.description}>Expert Developer</div>
+              <div className={Styles.desc}>Designed by <br /> Expert developer</div>
+            </div>
+          </div>
+
+          <div className={Styles.unique}>
+            <div className={Styles.icon}></div>
+            <div className={Styles.content}>
+              <div className={Styles.description}>Expert Developer</div>
+              <div className={Styles.desc}>Designed by <br /> Expert developer</div>
+            </div>
+          </div>
+        </div>
+
+        <div className={Styles.product_section}>
+          <div className={Styles.heading}>Multi-Purpose Templates</div>
+          <div className={Styles.product}>
+            <Product />
+          </div>
         </div>
       </>
     );
