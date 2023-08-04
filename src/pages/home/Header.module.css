@@ -41,14 +41,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* gap: 221px; */
     padding: 54px 90px;
+    gap: 30px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+
 }
 
 .unique{
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
+    flex: 1;
+    align-items: center;
 }
 
 .icon{
@@ -62,14 +66,24 @@
     font-weight: bold;
 }
 
-.product_section{
+.product_section, .product_section1{
     display: flex;
     flex-direction: column;
+    padding: 30px 90px;
+    gap: 28px;
 }
 
-.heading{
+.product_section1{
+    background-color: #E9E9E9;
+}   
+
+.heading, .heading1{
     font-size: 40px;
     font-weight: bold;
+}
+
+.heading1{
+    text-align: center;
 }
 
 .title1{
@@ -82,8 +96,59 @@
     opacity: 49%;
 }
 
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 0 250px;
+    gap: 49px;
+    
+}
+
 .cost{
     color: #B75B5B;
 }
 
+.container{
+    flex: 1;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+}
+
+.content{
+    padding: 5px 10px;
+    margin: 6px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid #F57C51;
+    color: #F57C51;
+    padding: 10px 16px;
+}
+
+.postedby{
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+.name, .date{
+    font-size: 15px;
+}
+
+.date{
+    opacity: 46%;
+}
 
