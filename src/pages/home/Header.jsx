@@ -1,5 +1,6 @@
 import Blogs from './Blogs';
 import Contact from './Contact';
+import Footer from './Footer';
 import Styles from './Header.module.css';
 import Navbar from './Navbar';
 import Product from './Product';
@@ -73,6 +74,7 @@ function Header() {
         </div>
 
         <Contact />
+        <Footer />
       </>
     );
   }
