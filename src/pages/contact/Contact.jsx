@@ -24,8 +24,19 @@ function Contact() {
                             <h5>Address: <span>Pokhara-26</span></h5>
                             <h5>Phone Number: <span>+977 9832487278</span></h5>
                             <div>
-                                <i class="fa-brands fa-square-facebook"></i>
+                                <i class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-square-twitter"></i> <i class="fa-brands fa-square-youtube"></i>
                             </div>
+                        </div>
+
+                        <div className='details'>
+                            <form action="">
+                                <input type="text" placeholder='Name..' />
+                                <input type="email" placeholder='Email..' />
+                                <input type="text" placeholder='Subject..' />
+                                <input type="submit" placeholder='Message...' />
+                                
+                            </form>
+
                         </div>
 
                     </div>

@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .navigation{
     background-image: url("../../images/contact.png");
     background-repeat: no-repeat;
@@ -42,4 +46,34 @@
     font-size: 30px;
     text-align: center;
     padding-top: 1rem;
+   
 }
+
+.content{
+    display: flex;
+    flex: 1 0 250px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 90px;
+}
+
+.info, details {
+    flex-basis: 45%;
+}
+
+.detail{
+    overflow-x: scroll;
+    width: 100%;
+    overflow-x: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 650px;
+}
+
