@@ -1,0 +1,13 @@
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .contain{
+        padding: 30px 1%;
+    }
+    .right_content {
+      margin-top: 10px;
+    }
+  }

@@ -49,31 +49,88 @@
    
 }
 
-.content{
+span{
+    color: #F57C51;
+}
+
+.contain{
+    padding: 30px 90px ;
+}
+
+.info{
+    padding-bottom: 19px;
+    font-weight: bold;
+}
+
+.left_content {
+    padding-top: 30px;
+}
+
+
+.btn1{
     display: flex;
-    flex: 1 0 250px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 100%;
-    padding: 90px;
+    justify-content: end;
 }
 
-.info, details {
-    flex-basis: 45%;
-}
 
-.detail{
-    overflow-x: scroll;
+.heading1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+
+.left_content, .right_content {
+    flex: 1;
+  }
+
+.info, .phone, .address, .email {
+    margin-bottom: 10px;
+  }
+
+  /* Form styling */
+  form input,
+  form textarea {
     width: 100%;
-    overflow-x: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  textarea{
+    height: 133px;
+  }
+
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .contain{
+        padding: 30px 10%;
+    }
+    .right_content {
+      margin-top: 10px;
+    }
+  }
+
+  .heading1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-form{
+.icons{
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
 }
 
-input{
-    width: 650px;
-}
 
