@@ -1,11 +1,11 @@
 import Styles from './Contact.module.css';
 import React from 'react';
 
-function Contact() {
+function Contacts() {
     return (
         <div className={Styles.contain}>
           <div className={Styles.heading1}>Contact Us</div>
-            <div className={Styles.container}>
+          <div className={Styles.container}>
             <div className={Styles.left_content}>
                 <div className={Styles.info}>Feel free to get in touch with us for any questions, feedback, or support. We're here to assist you!</div>
                 <div className={Styles.phone}>Phone Number: <span>+977 9827167978</span></div>
@@ -27,4 +27,4 @@ function Contact() {
     );
   }
 
-export default Contact;
+export default Contacts;

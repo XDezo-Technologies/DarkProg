@@ -6,57 +6,71 @@ span{
     padding: 30px 90px ;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.left_content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding-right: 20px;
-    gap: 10px;
-    padding-top: 30px;
-}
-
 .info{
     padding-bottom: 19px;
     font-weight: bold;
 }
 
-.right_content {
-    flex: 1;
-    padding-left: 20px;
+.left_content {
+    padding-top: 17px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-    height: 61px;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-textarea{
-    height: 133px;
-}
 
 .btn1{
     display: flex;
     justify-content: end;
 }
+
+
+.heading1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+
+.left_content, .right_content {
+    flex: 1;
+  }
+
+.info, .phone, .address, .email {
+    margin-bottom: 10px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  form input{
+    height: 61px;
+  }
+
+  textarea{
+    height: 133px;
+  }
+
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .contain{
+        padding: 30px 10%;
+    }
+    .right_content {
+      margin-top: 10px;
+    }
+  }
 
 .heading1{
     font-size: 40px;

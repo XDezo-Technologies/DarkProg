@@ -25,27 +25,23 @@ function Blog() {
                     <Blogs />
                     <Blogs />
                     <Blogs />
-                    
-
                 </div>
                 <div className={Styles.product}>
                     <Blogs />
                     <Blogs />
                     <Blogs />
-
                 </div>
                 <div className={Styles.product}>
                     <Blogs />
                     <Blogs />
                     <Blogs />
-
                 </div>
                 <div className={Styles.btn}>
                     <button>View More <AiOutlineRight /></button>
                 </div>
             </div>
 
-            <Footer/>
+            <Footer />
         </>
     );
 }
