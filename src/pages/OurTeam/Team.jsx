@@ -3,7 +3,11 @@ import Styles from './Team.module.css';
 import Navbar from '../home/Navbar';
 import CEO from '../../images/CEO.png';
 import Footer from '../home/Footer';
+import Member from './Member';
 import t1 from '../../images/t1.png';
+import t2 from '../../images/t2.png';
+import t3 from '../../images/t3.png';
+
 
 function Team() {
   return (
@@ -33,19 +37,25 @@ function Team() {
             </div>
         </div>
 
-        <div className="team">
-            <div className="Heading">
+        <div className={Styles.team}>
+            <div className={Styles.heading}>
                 Our Team
             </div>
 
-            <div className="members">
-                <div className="member1">
-                    <img src={t1} alt="" />
-                    <div className="detail">
-                        Company Manager <br /> Hari Prashad                    </div>
-                </div>
+            <div className={Styles.members}>
+                <Member image={t1} />
+                <Member image={t2} />
+                <Member image={t3} />
+            </div>
+
+            <div className={Styles.members}>
+                <Member image={t1} />
+                <Member image={t2} />
+                <Member image={t3} />
             </div>
         </div>
+
+        
 
         <Footer />
         </>

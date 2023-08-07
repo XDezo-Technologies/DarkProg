@@ -34,7 +34,7 @@
   
 
   .profile, .message{
-    flex: 1;
+    flex: 1 0 250px;
   }
 
   .message{
@@ -54,4 +54,38 @@
     font-size: 20px;
     text-align: justify;
     padding: 0;
+  }
+
+  .team{
+    padding: 30px 90px;
+  }
+
+  .members{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+
+  .heading{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .img{
+    height: 505.96px;
+    width: 383px;
+  }
+
+  .detail{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ceo, .team{
+        padding: 30px 10px;
+        text-align: center;
+    }
   }
