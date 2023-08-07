@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     const menu = ['Home', 'Products', 'Services', 'Blog', 'Company', 'Contact'];
-    const dropdownmenu = ['About Us', 'Our Team', 'Mission', 'Vision'];
+    const dropdownmenu = ['About', 'Our Team', 'Mission', 'Vision'];
 
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -31,7 +31,7 @@ function Navbar() {
                                     {isDropdownOpen && (
                                     <div className={Styles.dropdown}>
                                         {dropdownmenu.map((items, index) =>(
-                                            <li key={index}>{items}</li>
+                                            <Link to={`/${items.toLowerCase()}`} className={Styles.menu_items}>{items}</Link>
                                         ))}
                                     </div>
                                     )}
