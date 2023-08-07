@@ -7,7 +7,12 @@ import Blog from './pages/blog/Blog';
 import Team from './pages/OurTeam/Team';
 import About from './pages/About/About';
 import Vision from './pages/Vission/Vision';
+<<<<<<< HEAD
 import Productdetailspage from './pages/ProductDetailspage/Productdetailspage'
+=======
+import Mission from './pages/Mission/Mission';
+import Blog_detail from './pages/Blog_detail/Blog_detail';
+>>>>>>> 187ce58b51f4c448cb43b9319812c23aa347f138
 
 
 
@@ -25,8 +30,13 @@ function App() {
           <Route path="/about us" Component={About} />
           <Route path='/team' Component={Team} />
           <Route path='/vision' Component={Vision} />
+<<<<<<< HEAD
           <Route path='/Productdetailspage' Component={Productdetailspage} />
 
+=======
+          <Route path='/mission' Component={Mission} />
+          <Route path='/blog_detail' Component={Blog_detail} />
+>>>>>>> 187ce58b51f4c448cb43b9319812c23aa347f138
         </Routes>
     </BrowserRouter>
     </>
