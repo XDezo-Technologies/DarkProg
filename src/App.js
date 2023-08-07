@@ -6,6 +6,7 @@ import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
 import Team from './pages/OurTeam/Team';
 import About from './pages/About/About';
+import Vision from './pages/Vission/Vision';
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/blog" Component={Blog} />
           <Route path="/about us" Component={About} />
           <Route path='/team' Component={Team} />
+          <Route path='/vision' Component={Vision} />
         </Routes>
     </BrowserRouter>
     </>
