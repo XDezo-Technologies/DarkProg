@@ -5,6 +5,7 @@ import Services from './pages/services/Services';
 import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
 import About from './pages/About/About';
+import Productdetailspage from './pages/ProductDetailspage/Productdetailspage';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/blog" Component={Blog} />
           <Route path="/company/about" Component={About} />
           {/* <Route path="/company/about" Component={About} /> */}
+          <Route path="Productdetailspage" Component={Productdetailspage} />
         </Routes>
     </BrowserRouter>
     </>
