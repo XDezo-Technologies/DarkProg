@@ -1,5 +1,10 @@
+import Blogs from './Blogs';
+import Contacts from './Contacts';
+import Footer from './Footer';
 import Styles from './Header.module.css';
 import Navbar from './Navbar';
+import Product from './Product';
+import { AiOutlineRight } from 'react-icons/ai';
 
 function Header() {
     return (
@@ -17,6 +22,59 @@ function Header() {
                 </div>
             </div>
         </div>
+
+        <div className={Styles.work}>
+          <div className={Styles.unique}>
+            <div className={Styles.icon}></div>
+            <div className={Styles.content}>
+              <div className={Styles.description}>Expert Developer</div>
+              <div className={Styles.desc}>Designed by <br /> Expert developer</div>
+            </div>
+          </div>
+
+          <div className={Styles.unique}>
+            <div className={Styles.icon}></div>
+            <div className={Styles.content}>
+              <div className={Styles.description}>Expert Developer</div>
+              <div className={Styles.desc}>Designed by <br /> Expert developer</div>
+            </div>
+          </div>
+
+          <div className={Styles.unique}>
+            <div className={Styles.icon}></div>
+            <div className={Styles.content}>
+              <div className={Styles.description}>Expert Developer</div>
+              <div className={Styles.desc}>Designed by <br /> Expert developer</div>
+            </div>
+          </div>
+        </div>
+
+        <div className={Styles.product_section}>
+          <div className={Styles.heading}>Multi-Purpose Templates</div>
+          <div className={Styles.product}>
+            <Product />
+            <Product />
+            <Product />
+          </div>
+          <div className={Styles.btn}>
+            <button>View More <AiOutlineRight /></button>
+          </div>
+        </div>
+
+        <div className={Styles.product_section1}>
+          <div className={Styles.heading1}>From The Blog</div>
+          <div className={Styles.product}>
+            <Blogs />
+            <Blogs />
+            <Blogs />
+          </div>
+          <div className={Styles.btn}>
+            <button>View More <AiOutlineRight /></button>
+          </div>
+        </div>
+
+        <Contacts />
+        <Footer />
       </>
     );
   }

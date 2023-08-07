@@ -1,0 +1,147 @@
+span{
+    color: #F57C51;
+}
+
+.contain{
+    padding: 30px 90px ;
+}
+
+.info{
+    padding-bottom: 19px;
+    font-weight: bold;
+}
+
+.left_content {
+    padding-top: 17px;
+}
+
+
+.btn1{
+    display: flex;
+    justify-content: end;
+}
+
+
+.heading1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+
+.left_content, .right_content {
+    flex: 1;
+  }
+
+.info, .phone, .address, .email {
+    margin-bottom: 10px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  form input{
+    height: 61px;
+  }
+
+  textarea{
+    height: 133px;
+  }
+
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .contain{
+        padding: 30px 10%;
+    }
+    .right_content {
+      margin-top: 10px;
+    }
+  }
+
+.heading1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+    padding: 30px 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .middle, .right{
+    flex: 1;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.middle, .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.darkprog{
+    font-size: 40px;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.designer{
+    font-weight: bold;
+}
+
+.about, .li{
+    opacity: 56%;
+}
+
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 90px;
+    justify-content: space-between;
+}
+
+.rights, .help, center, .policy, .terms{
+    flex: 1;
+}
+
+.help{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}

@@ -5,7 +5,7 @@ import {AiOutlineDown} from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    const menu = ['Home', 'Product', 'Services', 'Blog', 'Company', 'Contact'];
+    const menu = ['Home', 'Products', 'Services', 'Blog', 'Company', 'Contact'];
     const dropdownmenu = ['About Us', 'Our Team', 'Mission', 'Vision'];
 
     const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -37,15 +37,15 @@ function Navbar() {
                                     )}
                                 </>
                                 ) : (
-                                <Link to={`/${item.toLowerCase()}`} className={Styles.menu}>{item}</Link>
+                                <Link to={`/${item.toLowerCase()}`} className={Styles.menu_items}>{item}</Link>
                                 )}
                             </li>
                             ))}
                         </ul>
                     </div>
                     <div className={Styles.profile}>
-                        <BsFillPersonFill className="icons" />
-                        <BsCart3 className="icons" />
+                        <BsFillPersonFill className={Styles.icons} />
+                        <BsCart3 className={Styles.icons} />
                     </div>
                 </div>
       </>
