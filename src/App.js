@@ -4,9 +4,11 @@ import Products from './pages/product/Products';
 import Services from './pages/services/Services';
 import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
+import Team from './pages/OurTeam/Team';
 import About from './pages/About/About';
-import Mission from './pages/Mission/Mission';
 import Vision from './pages/Vission/Vision';
+import Mission from './pages/Mission/Mission';
+import Blog_detail from './pages/Blog_detail/Blog_detail';
 
 
 
@@ -21,9 +23,11 @@ function App() {
           <Route path="/services" Component={Services} />
           <Route path="/contact" Component={Contact} />
           <Route path="/blog" Component={Blog} />
-          <Route path="/about" Component={About} />
-          <Route path="/mission" Component={Mission} />
-          <Route path="/vision" Component={Vision} />
+          <Route path="/about us" Component={About} />
+          <Route path='/team' Component={Team} />
+          <Route path='/vision' Component={Vision} />
+          <Route path='/mission' Component={Mission} />
+          <Route path='/blog_detail' Component={Blog_detail} />
         </Routes>
     </BrowserRouter>
     </>
