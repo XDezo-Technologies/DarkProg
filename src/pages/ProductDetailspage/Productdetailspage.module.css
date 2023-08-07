@@ -1,0 +1,38 @@
+.products{
+    display: flex;
+    margin-top: 2rem ;
+    margin-left: 2rem;
+    gap: 50px;
+    justify-content: center;
+}
+.pdh{
+    margin-left: 2rem;
+    padding-top: 1rem;
+
+}
+
+.productd{
+    
+    border: 1px solid black;
+    padding: 0;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+
+    
+   
+    
+}
+
+
+.productd button{
+    margin-top: 1rem;
+
+}
+
+.productimg ,img{
+    height: 400px;
+    
+}
+
+

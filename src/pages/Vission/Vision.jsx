@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from '../home/Navbar'
 
 export default function Vision() {
   return (
-    <div>Vision</div>
+    <div>
+      <Navbar backgroundColor="black" />
+      </div>
   )
 }
