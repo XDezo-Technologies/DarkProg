@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  .navigation{
+    background-image: url("../../images/teams.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero_section{
+    padding: 220px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 22px;
+  }
+  
+  .title{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+  }
+
+  .ceo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 90px;
+  }
+  
+
+  .profile, .message{
+    flex: 1;
+  }
+
+  .message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 42px;
+  }
+
+  .heading{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 0;
+  }

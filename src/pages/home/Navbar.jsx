@@ -4,9 +4,9 @@ import { BsFillPersonFill, BsCart3 } from 'react-icons/bs';
 import {AiOutlineDown} from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({ backgroundColor }) {
     const menu = ['Home', 'Products', 'Services', 'Blog', 'Company', 'Contact'];
-    const dropdownmenu = ['About', 'Our Team', 'Mission', 'Vision'];
+    const dropdownmenu = ['About Us', 'Team', 'Mission', 'Vision'];
 
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -15,7 +15,7 @@ function Navbar() {
     };
     return (
       <>
-                <div className={Styles.navbar}>
+                <div className={Styles.navbar} style={{ backgroundColor }}>
                     <div className={Styles.logo}>
                         DarkProg
                     </div>
@@ -31,7 +31,7 @@ function Navbar() {
                                     {isDropdownOpen && (
                                     <div className={Styles.dropdown}>
                                         {dropdownmenu.map((items, index) =>(
-                                            <Link to={`/${items.toLowerCase()}`} className={Styles.menu_items}>{items}</Link>
+                                            <li key={index}><Link to={`/${items.toLowerCase()}`} className={Styles.menu_items}>{items}</Link></li>
                                         ))}
                                     </div>
                                     )}

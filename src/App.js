@@ -4,6 +4,7 @@ import Products from './pages/product/Products';
 import Services from './pages/services/Services';
 import Contact from './pages/contact/Contact';
 import Blog from './pages/blog/Blog';
+import Team from './pages/OurTeam/Team';
 import About from './pages/About/About';
 
 
@@ -19,8 +20,8 @@ function App() {
           <Route path="/services" Component={Services} />
           <Route path="/contact" Component={Contact} />
           <Route path="/blog" Component={Blog} />
-          <Route path="/company/about" Component={About} />
-          {/* <Route path="/company/about" Component={About} /> */}
+          <Route path="/about us" Component={About} />
+          <Route path='/team' Component={Team} />
         </Routes>
     </BrowserRouter>
     </>
