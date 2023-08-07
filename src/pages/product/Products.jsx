@@ -2,16 +2,17 @@ import Navbar from '../home/Navbar';
 import Styles from './Product.module.css';
 import { AiOutlineRight } from 'react-icons/ai';
 import Product from '../home/Product';
+import Footer from '../home/Footer';
 
 
 function Products() {
     return (
       <>
-        <div className="header">
-            <div className="navigation">
+        <div className={Styles.header}>
+            <div className={Styles.navigation}>
                 <Navbar />
-                <div className="hero-section">
-                    <div className="title">Our Products</div>
+                <div className={Styles.hero_section}>
+                    <div className={Styles.title}>Our Products</div>
                 </div>
             </div>
         </div>
@@ -23,13 +24,30 @@ function Products() {
             <Product />
             <Product />
           </div>
+
+          <div className={Styles.product}>
+            <Product />
+            <Product />
+            <Product />
+          </div>
+
+          <div className={Styles.product}>
+            <Product />
+            <Product />
+            <Product />
+          </div>
+
           <div className={Styles.btn}>
             <button>View More <AiOutlineRight /></button>
           </div>
         </div>
+        
+        <Footer/>
       </>
     );
   }
+
+
 
 export default Products;
   
