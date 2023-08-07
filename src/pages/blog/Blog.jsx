@@ -2,6 +2,7 @@ import Styles from './Blog.module.css';
 import Navbar from '../home/Navbar';
 import { AiOutlineRight } from 'react-icons/ai';
 import Blogs from '../home/Blogs';
+import Footer from '../home/Footer';
 
 
 function Blog() {
@@ -24,25 +25,23 @@ function Blog() {
                     <Blogs />
                     <Blogs />
                     <Blogs />
-                    
-
                 </div>
                 <div className={Styles.product}>
                     <Blogs />
                     <Blogs />
                     <Blogs />
-
                 </div>
                 <div className={Styles.product}>
                     <Blogs />
                     <Blogs />
                     <Blogs />
-
                 </div>
                 <div className={Styles.btn}>
                     <button>View More <AiOutlineRight /></button>
                 </div>
             </div>
+
+            <Footer />
         </>
     );
 }
