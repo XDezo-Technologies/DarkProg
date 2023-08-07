@@ -193,9 +193,8 @@ padding-top: 3rem;
 
 .Refundpolicy{
     background-color:rgb(230, 229, 229);
-    padding-top: 1rem;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 30px 90px;
+    margin: 30px;
 }
 
 .refund{

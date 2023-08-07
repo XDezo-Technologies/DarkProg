@@ -26,24 +26,29 @@
     text-align: center;
   }
 
-  .ceo{
+.ceo {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 90px;
-  }
-  
-
-  .profile, .message{
-    flex: 1 0 250px;
-  }
-
-  .message{
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 42px;
-  }
+    gap: 20px;
+    padding: 30px 90px;
+}
+
+.profile {
+    flex: 1 0 250px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.profile img {
+    max-width: 100%;
+    height: auto;
+}
+
+.message {
+    flex: 1;
+    text-align: center;
+}
 
   .heading{
     font-size: 40px;
@@ -63,19 +68,15 @@
   .members{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 55px;
+    max-width: 100%;
   }
 
   .heading{
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-  }
-
-  .img{
-    height: 505.96px;
-    width: 383px;
   }
 
   .detail{
@@ -88,4 +89,17 @@
         padding: 30px 10px;
         text-align: center;
     }
+  
+    .members{
+      flex-direction: column;
+      align-items: center;
+    }
   }
+
+  @media screen and (max-width: 945px) {
+    .members{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+

@@ -46,13 +46,12 @@ function Team() {
                 <Member image={t1} />
                 <Member image={t2} />
                 <Member image={t3} />
-            </div>
-
-            <div className={Styles.members}>
                 <Member image={t1} />
                 <Member image={t2} />
                 <Member image={t3} />
             </div>
+
+
         </div>
 
         

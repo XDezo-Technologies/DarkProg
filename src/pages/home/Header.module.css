@@ -120,7 +120,7 @@
     margin: 6px 0;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .banner img{
@@ -143,6 +143,7 @@ button{
     display: flex;
     justify-content: flex-start;
     gap: 14px;
+    align-items: center;
 }
 
 .name, .date{
@@ -155,6 +156,6 @@ button{
 
 @media screen and (max-width: 768px) {
     .product_section, .product_section1, .work{
-        padding: 30px 1%;
+        padding: 30px 10px;
     }
   }
