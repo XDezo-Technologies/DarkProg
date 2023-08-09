@@ -31,20 +31,28 @@ function Productdetailspage() {
                         </div>
                     </div>
 
-                    <div className={Content}>
-                        <div className={content1}>
+                    <div className={Styles.Content}>
+                        <div className={Styles.content1}>
                             <h1>Trend Website Design</h1>
                         </div>
-                        <div className={content2}>
+                        <div className={Styles.content2}>
                             <p>For your business, too, your customers’ wins are your wins. If you’re a small retailer, this is true not just with your in-store customer service, but also your e-commerce website’s overall UX, its check-out flow, your online return options, and your product descriptions. By writing accurate, educational, and engaging product descriptions, a copywriter serves their customers just as much as a sales associate does when someone walks through your shop’s front door. For your business, too, your customers’ wins are your wins. If you’re a small retailer, this is true not just with your in-store customer service, but also your e-commerce website’s overall UX, its check-out flow, your online return options, and your product descriptions. By writing accurate, educational, and engaging product descriptions, a copywriter serves their customers just as much as a sales associate does when someone walks through your shop’s front door.
                                 For your business, too, your customers’ wins are your wins. If you’re a small retailer, this is true not just with your in-store customer service, but also your e-commerce website’s overall UX, its check-out flow, your online return options, and your product descriptions. By writing accurate, educational, and engaging product descriptions, a copywriter serves their customers just as much as a sales associate does when someone walks through your shop’s front door.</p>
                         </div>
 
                     </div>
 
+                    <div className='Relatedp'>
+                        <div className=''>
+
+                        </div>
+                    </div>
+
+
 
                 </div>
             </div>
+            <Footer/>
         </div>
 
 
@@ -53,7 +61,7 @@ function Productdetailspage() {
 
 
 
-
+        
     );
 }
 
