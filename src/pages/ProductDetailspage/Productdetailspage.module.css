@@ -47,5 +47,25 @@
     padding-bottom: 27px;
 }
 
+.product_section{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 90px;
+    gap: 28px;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 0 250px;
+    gap: 49px;
+    
+}
 
 

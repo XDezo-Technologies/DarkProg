@@ -3,7 +3,9 @@ import Navbar from '../home/Navbar';
 import Footer from '../home/Footer'
 import Styles from './Productdetailspage.module.css'
 import webproduct from '../../images/webproduct.png'
+import Product from '../home/Product';
 function Productdetailspage() {
+
     return (
 
         <div className={Styles.header}>
@@ -42,11 +44,18 @@ function Productdetailspage() {
 
                     </div>
 
-                    <div className='Relatedp'>
-                        <div className=''>
+                    <div className={Styles.product_section}>
+          <div className={Styles.heading}>Multi-Purpose Templates</div>
+          <div className={Styles.product}>
+            <Product />
+            <Product />
+            <Product />
+          </div>
 
-                        </div>
-                    </div>
+         
+
+          
+        </div>
 
 
 
