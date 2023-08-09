@@ -8,6 +8,7 @@ import Team from './pages/OurTeam/Team';
 import About from './pages/About/About';
 import Vision from './pages/Vission/Vision';
 import Mission from './pages/mission/Mission';
+import Productdetailspage from './pages/ProductDetailspage/Productdetailspage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/team' Component={Team} />
           <Route path='/vision' Component={Vision} />
           <Route path='/mission' Component={Mission} />
+          <Route path='/productdetailspage' Component={Productdetailspage} />
         </Routes>
     </BrowserRouter>
     </>
