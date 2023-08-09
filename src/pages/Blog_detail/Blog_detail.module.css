@@ -5,15 +5,92 @@
     box-sizing: border-box;
 }
 
+.breadcrum{
+    padding-left: 4rem;
+    padding-top: 1.5rem;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 20px 70px;
 }
 
 .leftbar{
-    flex: 1;
+    flex: 1.5;
+}
+
+.leftbar img{
+    width: 100%;
+    height: 450px;
+}
+
+.details{
+    background-color: #D9D9D9;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.details h1{
+    padding: 1rem;
+}
+.details p{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+}
+
+.message_box{
+    padding: 2rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #050505;
+  border-radius: 5px;
+}
+
+textarea{
+  height: 133px;
 }
 
 .rightbar{
     flex: 1;
+    background-color: #EEEDED;
+    border: 1px solid;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.latest{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+}
+
+.main{
+    padding: 1rem;
+}
+.sidebar_img img{
+    width: 100%;
+    height: 250px;
+}
+
+.sidebar_img p{
+    font-size: 12px;
+    padding-bottom: 12px;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid #F57C51;
+    color: #F57C51;
+    padding: 10px 16px;
 }
