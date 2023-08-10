@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../home/Navbar'
 import blogs from '../../images/blogs.png'
 import Styles from './Blog_detail.module.css';
+import Footer from '../home/Footer';
 
  function Blog_detail() {
   return (
@@ -23,6 +24,7 @@ import Styles from './Blog_detail.module.css';
             </div>
 
         </div>
+        <Footer/>
     </div>
 
     </>

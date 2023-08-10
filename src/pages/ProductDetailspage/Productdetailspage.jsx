@@ -4,6 +4,8 @@ import Footer from '../home/Footer'
 import Styles from './Productdetailspage.module.css'
 import webproduct from '../../images/webproduct.png'
 import Product from '../home/Product';
+import {Link} from 'react-router-dom';
+
 function Productdetailspage() {
 
     return (
@@ -13,7 +15,7 @@ function Productdetailspage() {
                 <Navbar backgroundColor="Black" />
                 <div className={Styles.productdetails}>
                     <div className={Styles.pdh}>
-                        Product / Product Details
+                       <Link to="/Products">Product</Link>  /  Details
                     </div>
                     <div className={Styles.products}>
                         <div className={Styles.productimg}>
@@ -52,8 +54,6 @@ function Productdetailspage() {
             <Product />
           </div>
 
-         
-
           
         </div>
 
@@ -63,11 +63,6 @@ function Productdetailspage() {
             </div>
             <Footer/>
         </div>
-
-
-
-
-
 
 
         
