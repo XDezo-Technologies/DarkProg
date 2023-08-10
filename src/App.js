@@ -7,8 +7,9 @@ import Blog from './pages/blog/Blog';
 import Team from './pages/OurTeam/Team';
 import About from './pages/About/About';
 import Vision from './pages/Vission/Vision';
-import Mission from './pages/mission/Mission';
+import Mission from './pages/Mission/Mission';
 import Productdetailspage from './pages/ProductDetailspage/Productdetailspage';
+import Blog_detail from './pages/Blog_detail/Blog_detail';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/vision' Component={Vision} />
           <Route path='/mission' Component={Mission} />
           <Route path='/productdetailspage' Component={Productdetailspage} />
+          <Route path='/blog_detail' Component={Blog_detail} />
         </Routes>
     </BrowserRouter>
     </>
