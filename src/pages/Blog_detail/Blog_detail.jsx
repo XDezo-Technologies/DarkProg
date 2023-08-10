@@ -4,13 +4,16 @@ import blogs from '../../images/blogs.png'
 import { AiOutlineRight } from 'react-icons/ai';
 import Styles from './Blog_detail.module.css';
 import Footer from '../home/Footer';
+import {Link} from 'react-router-dom';
+
 
 function Blog_detail() {
     return (
         <>
             <div>
                 <Navbar backgroundColor="black" />
-                <div className={Styles.breadcrum}>Blog <i class="fa-solid fa-angle-right"></i> <span>Blog Details</span></div>
+                <div className={Styles.breadcrum}>
+                    <Link to="/Blog">Blog</Link> <i class="fa-solid fa-angle-right"></i> <span>Blog Details</span></div>
                 <div className={Styles.container}>
 
                     <div className={Styles.leftbar}>

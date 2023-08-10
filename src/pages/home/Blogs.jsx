@@ -8,10 +8,12 @@ function Blogs() {
     return (
         <div className={Styles.container}>
             <div className={Styles.banner}>
-               <img src={blogs} alt="" />
+              <Link to="/Blog_detail"><img src={blogs} alt="" /></Link> 
             </div>
             <div className={Styles.content}>
-                <div className={Styles.title1}>Which One Is Best?</div>
+                
+                    <Link to="/Blog_detail"><div className={Styles.title1}>Which One Is Best? </div></Link>
+                   
                 <div className={Styles.description1}>Frameworks are ready-to-use collections of libraries, modules, and features that are built on top of other languages.</div>
                 <div className={Styles.postedby}>
                     <div className={Styles.pic}>

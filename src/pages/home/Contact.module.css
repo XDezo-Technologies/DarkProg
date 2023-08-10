@@ -99,6 +99,9 @@ span{
     flex-direction: column;
     gap: 20px;
 }
+.darkprog{
+    color: #ccc;
+}
 
 .middle, .right{
     display: flex;
@@ -126,6 +129,7 @@ ul{
 
 .about, .li{
     opacity: 56%;
+    color: white;
 }
 
 .copyright{
