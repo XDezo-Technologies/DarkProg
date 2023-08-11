@@ -16,9 +16,9 @@ function Navbar({ backgroundColor }) {
     return (
       <>
                 <div className={Styles.navbar} style={{ backgroundColor }}>
-                    <div className={Styles.logo}>
+                   <Link to="/home"><div className={Styles.logo}>
                         DarkProg
-                    </div>
+                    </div></Link> 
                     <div className={Styles.menu}>
                         <ul>
                             {menu.map((item, index) => (

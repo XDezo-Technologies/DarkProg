@@ -2,13 +2,16 @@ import Styles from './Contact.module.css';
 import React from 'react';
 import { BsFacebook } from 'react-icons/bs';
 import { AiOutlineInstagram, AiFillTwitterSquare, AiFillLinkedin } from 'react-icons/ai';
+import {Link} from 'react-router-dom';
+
 
 function Footer() {
     return (
         <>
         <div className={Styles.footer}>
           <div className={Styles.left}>
-            <div className={Styles.darkprog}>DarkProg</div>
+
+            <Link to="/home"><div className={Styles.darkprog}>DarkProg</div></Link>
             <div className={Styles.about}>Don't settle for a mediocre online presence. Elevate your brand with our exceptional website templates. Explore our collection now and unlock the potential of your online journey.</div>
             <div className={Styles.icons}>
                 <BsFacebook />
@@ -22,8 +25,8 @@ function Footer() {
             <ul>
                 <li className={Styles.li}>Lisense</li>
                 <li className={Styles.li}>FAQ</li>
-                <li className={Styles.li}>About Us</li>
-                <li className={Styles.li}>Products</li>
+                  <Link to="/about us"><li className={Styles.li}>About Us</li></Link>
+                <Link to="/Products"><li className={Styles.li}>Products</li></Link>
                 <li className={Styles.li}>Decentralised Website Builder</li>
             </ul>
           </div>

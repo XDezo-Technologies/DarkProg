@@ -10,6 +10,7 @@ import Vision from './pages/Vission/Vision';
 import Mission from './pages/Mission/Mission';
 import Productdetailspage from './pages/ProductDetailspage/Productdetailspage';
 import Blog_detail from './pages/Blog_detail/Blog_detail';
+import Payment from './pages/payment/Payment';
 
 function App() {
   return (
@@ -28,9 +29,22 @@ function App() {
           <Route path='/mission' Component={Mission} />
           <Route path='/productdetailspage' Component={Productdetailspage} />
           <Route path='/blog_detail' Component={Blog_detail} />
+          <Route path='/payment' Component={Payment} />
         </Routes>
     </BrowserRouter>
     </>
+
+    
+
+
+
+
+
+
+
+
+
+
   );
 }
 

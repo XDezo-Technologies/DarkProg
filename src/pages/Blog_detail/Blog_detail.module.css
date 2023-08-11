@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 
+a{
+    color: #050505;
+}
 .breadcrum{
     padding-left: 4rem;
     padding-top: 1.5rem;
+    
 }
 
 .container{
