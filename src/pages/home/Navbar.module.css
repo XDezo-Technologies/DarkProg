@@ -62,9 +62,28 @@ a{
     text-decoration: none;
 }
 
+
   /* Media queries for responsiveness */
   @media screen and (max-width: 768px) {
     .navbar{
         padding: 30px 10px;
     }
   }
+
+
+  @media screen and (max-width: 1000px) {
+    .menu, .profile{
+        display: none;
+
+  }
+}
+
+.Icon{
+    color:antiquewhite;
+}
+
+
+
+
+
+

@@ -30,6 +30,7 @@ function App() {
           <Route path='/productdetailspage' Component={Productdetailspage} />
           <Route path='/blog_detail' Component={Blog_detail} />
           <Route path='/payment' Component={Payment} />
+
         </Routes>
     </BrowserRouter>
     </>
