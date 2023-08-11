@@ -6,7 +6,7 @@ function Member(props) {
         <div className={Styles.member}>
             <img className={Styles.img} src={props.image} alt="" />
             <div className={Styles.detail}>
-                Company Manager <br /> Hari Prashad                    </div>
+                {props.post} <br /> {props.name}                   </div>
         </div>
     )
 }
