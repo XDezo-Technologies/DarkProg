@@ -8,6 +8,7 @@ import Team from './pages/OurTeam/Team';
 import About from './pages/About/About';
 import Vision from './pages/Vission/Vision';
 import Mission from './pages/mission/Mission';
+import './pages/home/responsive.css';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/services" Component={Services} />
           <Route path="/contact" Component={Contact} />
           <Route path="/blog" Component={Blog} />
+          <Route path="/company" Component={About} />
           <Route path="/about us" Component={About} />
           <Route path='/team' Component={Team} />
           <Route path='/vision' Component={Vision} />

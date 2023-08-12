@@ -21,13 +21,6 @@ span{
     justify-content: flex-end;
 }
 
-
-.heading1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
 .container {
     display: flex;
     flex-direction: row;
@@ -72,11 +65,41 @@ span{
     }
   }
 
+  @media screen and (max-width: 400px) {
+    .contain{
+        padding: 0;
+        margin: 0 10px 35px 10px;
+        text-align: start;
+    }
+
+    form input,
+    form textarea {
+      width: 300px;
+      padding: 10px;
+      margin: 0 0 35px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .btn1{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 0 35px 0;
+    }
+
+    button{
+      margin-bottom: 35px;
+    }
+
+    .heading1{
+      padding: 0 156px 0 0;
+    }
+  }
+
 .heading1{
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 30px;
 }
 
 .footer{

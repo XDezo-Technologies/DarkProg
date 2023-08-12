@@ -159,3 +159,9 @@ button{
         padding: 30px 10px;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    .product_section, .product_section1, .work{
+        padding: 0;
+    }
+  }

@@ -71,7 +71,13 @@ button{
 
 @media screen and (max-width: 768px) {
     .product_section1{
-        padding: 30px 1%;
+        padding: 30px 10px;
     }
 
+  }
+
+  @media screen and (max-width: 400px) {
+    .product_section1{
+        padding: 0;
+    }
   }
