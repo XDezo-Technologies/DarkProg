@@ -6,7 +6,7 @@ import Footer from '../home/Footer';
 import Member from './Member';
 import t1 from '../../images/t1.png';
 import t2 from '../../images/t2.png';
-import t3 from '../../images/t3.png';
+import about from '../../images/about.png';
 
 
 function Team() {
@@ -43,12 +43,15 @@ function Team() {
             </div>
 
             <div className={Styles.members}>
-                <Member image={t1} />
-                <Member image={t2} />
-                <Member image={t3} />
-                <Member image={t1} />
-                <Member image={t2} />
-                <Member image={t3} />
+                <Member image={t1} post='Company Manager' name = 'Hari prashad'/>
+                <Member image={t2} post='Graphic designer' name = 'Hetlar maya' />
+                <Member image={about} post='Disital Marketing' name = 'Prashad Bahadur'/>
+            </div>
+
+            <div className={Styles.members}>
+                <Member image={t1} post='Company Manager' name = 'Hari prashad'/>
+                <Member image={t2} post='Graphic designer' name = 'Hetlar maya' />
+                <Member image={about} post='Disital Marketing' name = 'Prashad Bahadur'/>
             </div>
 
 

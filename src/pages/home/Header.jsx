@@ -5,6 +5,8 @@ import Styles from './Header.module.css';
 import Navbar from './Navbar';
 import Product from './Product';
 import { AiOutlineRight } from 'react-icons/ai';
+import {Link} from 'react-router-dom';
+
 
 function Header() {
     return (
@@ -18,7 +20,9 @@ function Header() {
                         Welcome to Darkprog, where creativity meets functionality. We offer a curated <br /> 
                         collection of exquisite website templates to cater to all your online needs. 
                     </div>
-                    <button className={Styles.button}>Browse Template</button>
+                    
+                      <Link to ="/Products"><button className={Styles.button}>Browse Template</button></Link>
+                      
                 </div>
             </div>
         </div>
@@ -57,7 +61,9 @@ function Header() {
             <Product />
           </div>
           <div className={Styles.btn}>
-            <button>View More <AiOutlineRight /></button>
+           
+              <Link to="/Products"><button>View More <AiOutlineRight /></button></Link>
+              
           </div>
         </div>
 
@@ -68,8 +74,10 @@ function Header() {
             <Blogs />
             <Blogs />
           </div>
+
           <div className={Styles.btn}>
-            <button>View More <AiOutlineRight /></button>
+
+            <Link to="/Blog"><button>View More <AiOutlineRight /></button></Link>
           </div>
         </div>
 

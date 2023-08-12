@@ -62,6 +62,7 @@ a{
     text-decoration: none;
 }
 
+
   /* Media queries for responsiveness */
   @media screen and (max-width: 768px) {
     .navbar{
@@ -69,8 +70,28 @@ a{
     }
   }
 
+<<<<<<< HEAD
   @media screen and (max-width: 400px) {
     .navbar{
         padding: 0;
     }
   }
+=======
+
+  @media screen and (max-width: 1000px) {
+    .menu, .profile{
+        display: none;
+
+  }
+}
+
+.Icon{
+    color:antiquewhite;
+}
+
+
+
+
+
+
+>>>>>>> 4706b420fed2dc4e8aacc525ed58a709d8411d0a

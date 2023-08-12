@@ -1,56 +1,67 @@
 import React, { useState } from 'react';
 import Styles from './Navbar.module.css';
 import { BsFillPersonFill, BsCart3 } from 'react-icons/bs';
-import {AiOutlineDown} from 'react-icons/ai';
+import { AiOutlineDown } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 function Navbar({ backgroundColor }) {
-    const menu = ['Home', 'Products', 'Services', 'Blog', 'Company', 'Contact'];
-    const dropdownmenu = ['About Us', 'Team', 'Mission', 'Vision'];
+  const menu = ['Home', 'Products', 'Services', 'Blog', 'Company', 'Contact'];
+  const dropdownmenu = ['About Us', 'Team', 'Mission', 'Vision'];
 
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
-    const toggleDropdown = () => {
-        setDropdownOpen((prevState) => !prevState);
-    };
-    return (
-      <>
-                <div className={Styles.navbar} style={{ backgroundColor }}>
-                    <div className={Styles.logo}>
-                        DarkProg
-                    </div>
-                    <div className={Styles.menu}>
-                        <ul>
-                            {menu.map((item, index) => (
-                            <li key={index}>
-                                {item === 'Company' ? (
-                                <>
-                                   <div className={Styles.menu_items} onClick={toggleDropdown}> 
-                                    {item} <AiOutlineDown className='down'/>
-                                    </div>
-                                    {isDropdownOpen && (
-                                    <div className={Styles.dropdown}>
-                                        {dropdownmenu.map((items, index) =>(
-                                            <li key={index}><Link to={`/${items.toLowerCase()}`} className={Styles.menu_items}>{items}</Link></li>
-                                        ))}
-                                    </div>
-                                    )}
-                                </>
-                                ) : (
-                                <Link to={`/${item.toLowerCase()}`} className={Styles.menu_items}>{item}</Link>
-                                )}
-                            </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className={Styles.profile}>
-                        <BsFillPersonFill className={Styles.icons} />
-                        <BsCart3 className={Styles.icons} />
-                    </div>
-                </div>
-      </>
-    );
-  }
+  const toggleDropdown = () => {
+    setDropdownOpen((prevState) => !prevState);
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen((prevState) => !prevState);
+  };
+
   
+  return (
+    <>
+      <div className={Styles.navbar} style={{ backgroundColor }}>
+        <Link to="/home">
+          <div className={Styles.logo}>DarkProg</div>
+        </Link>
+        <div className={`${Styles.menu} ${isMenuOpen ? Styles.responsive : ''}`}>
+          <ul>
+            {menu.map((item, index) => (
+              <li key={index}>
+                {item === 'Company' ? (
+                  <>
+                    <div className={Styles.menu_items} onClick={toggleDropdown}>
+                      {item} <AiOutlineDown className='down' />
+                    </div>
+                    {isDropdownOpen && (
+                      <div className={Styles.dropdown}>
+                        {dropdownmenu.map((items, index) => (
+                          <li key={index}>
+                            <Link to={`/${items.toLowerCase()}`} className={Styles.menu_items}>{items}</Link>
+                          </li>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link to={`/${item.toLowerCase()}`} className={Styles.menu_items}>{item}</Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className={Styles.profile}>
+          <BsFillPersonFill className={Styles.icons} />
+          <BsCart3 className={Styles.icons} />
+        </div>
+        <div className={Styles.Icon} onClick={toggleMenu()}>
+          &#9776;
+        </div>
+      </div>
+    </>
+  );
+}
+
 export default Navbar;
-  
