@@ -1,0 +1,113 @@
+.pay{
+    background-color: #D9D9D9;
+}
+
+.payment, .options{
+    padding: 30px 90px 0 90px;
+}
+
+.method{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 44px;
+}
+
+.options{
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 222px;
+    width: 276px;
+    background-color: transparent;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+}
+
+.wallet{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.paymentdetail, .paymentdetail1, .paymentdetail2, .paymentdetail3{
+    padding: 56px 299px 56px 90px;
+    background-color: white;
+    margin: 0 90px 30px 90px;
+
+}
+
+.ec{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expire{
+    flex: 3 0 250px;
+    padding-right: 74px;
+}
+
+.input{
+    margin-bottom: 23px;
+}
+
+.cvv{
+    flex: 1;
+}
+
+.agreement{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-top: 32px;
+}
+
+.check{
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+.agree{
+    font-size: 20px;
+}
+
+.p{
+    color: #6A6969;
+}
+
+.btn2{
+    margin-top: 28px;
+}
+
+@media screen and (max-width: 756px) {
+    .paymentdetail, .paymentdetail1, .paymentdetail2, .paymentdetail3{
+        padding: 20px;
+        background-color: white;
+        margin: 0 30px 30px 30px;
+
+    }
+
+    .payment, .options{
+        padding: 30px 30px 0 30px;
+    }
+
+    .options{
+        justify-content: start;
+    }
+
+    .ec{
+        display: block;
+    }
+  }

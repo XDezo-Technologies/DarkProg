@@ -63,6 +63,10 @@
     padding: 30px 90px;
   }
 
+  .img{
+    flex: 1 1 250px;
+  }
+
   .members{
     flex: 1;
     display: flex;

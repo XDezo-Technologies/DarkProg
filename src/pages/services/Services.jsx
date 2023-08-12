@@ -1,6 +1,7 @@
 import Navbar from '../home/Navbar';
 import Styles from './Services.module.css'
 import Footer from '../home/Footer'
+import { Link } from 'react-router-dom';
 
 function Services() {
   return (
@@ -66,8 +67,7 @@ function Services() {
               <p><i class="fa-solid fa-check"></i> Free Membership</p>
               <p><i class="fa-solid fa-check"></i> 30Gb Storage</p>
               <p><i class="fa-solid fa-check"></i> 1 Personal Email</p> <br />
-
-              <button>Get Started <i class="fa-solid fa-angle-right"></i> </button>
+              <button><Link to="/home">Get Started <i class="fa-solid fa-angle-right"></i> </Link></button>
 
             </div>
 
@@ -79,7 +79,7 @@ function Services() {
               <p><i class="fa-solid fa-check"></i> 2 Personal Email</p>
               <p><i class="fa-solid fa-check"></i> 1 FTP Account</p><br />
 
-              <button>Get Started <i class="fa-solid fa-angle-right"></i> </button>
+              <button><Link to="/payment">Get Started <i class="fa-solid fa-angle-right"></i> </Link></button>
             </div>
           </div>
 
@@ -105,7 +105,7 @@ function Services() {
           <div className={Styles.qA2}>
           <table>
             <tr>
-              <th> What do you want? <i class="fa-solid fa-caret-down"></i> </th>
+              <th> <div className="question">What do you want?</div> <i class="fa-solid fa-caret-down"></i> </th>
               <th> What do you want? <i class="fa-solid fa-caret-down"></i></th>
               <th> What do you want? <i class="fa-solid fa-caret-down"></i></th>
               <th> What do you want? <i class="fa-solid fa-caret-down"></i></th>

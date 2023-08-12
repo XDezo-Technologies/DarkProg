@@ -7,15 +7,10 @@ import Blog from './pages/blog/Blog';
 import Team from './pages/OurTeam/Team';
 import About from './pages/About/About';
 import Vision from './pages/Vission/Vision';
-<<<<<<< HEAD
-import Mission from './pages/mission/Mission';
-import './pages/home/responsive.css';
-=======
 import Mission from './pages/Mission/Mission';
 import Productdetailspage from './pages/ProductDetailspage/Productdetailspage';
 import Blog_detail from './pages/Blog_detail/Blog_detail';
 import Payment from './pages/payment/Payment';
->>>>>>> 4706b420fed2dc4e8aacc525ed58a709d8411d0a
 
 function App() {
   return (

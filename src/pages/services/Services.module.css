@@ -120,14 +120,13 @@
 .Categories1 th{
     border: 1px solid black;
     display: flex;
-    gap: 200px;
-
-        
+    justify-content: space-between;
+    
 }
 
-.cat,i{
-    flex: 1;
-    
+.cat{
+    width: 350px;
+    text-align: start;
 }
 
 
@@ -217,7 +216,9 @@ padding-top: 3rem;
 .qA2 th{
     border: 1px solid black;
     margin: 0;
-    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .qA2 table{

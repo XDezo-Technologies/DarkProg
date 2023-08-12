@@ -4,20 +4,18 @@ import { BsFillPersonFill, BsCart3 } from 'react-icons/bs';
 import { AiOutlineDown } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
+
 function Navbar({ backgroundColor }) {
   const menu = ['Home', 'Products', 'Services', 'Blog', 'Company', 'Contact'];
   const dropdownmenu = ['About Us', 'Team', 'Mission', 'Vision'];
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownOpen((prevState) => !prevState);
   };
 
-  const toggleMenu = () => {
-    setMenuOpen((prevState) => !prevState);
-  };
+  const [showMenu, setShowMenu] = useState(false);
 
   
   return (
@@ -26,7 +24,7 @@ function Navbar({ backgroundColor }) {
         <Link to="/home">
           <div className={Styles.logo}>DarkProg</div>
         </Link>
-        <div className={`${Styles.menu} ${isMenuOpen ? Styles.responsive : ''}`}>
+        <div className={`${Styles.menu} ${showMenu ? Styles.responsive : ''}`}>
           <ul>
             {menu.map((item, index) => (
               <li key={index}>
@@ -52,13 +50,19 @@ function Navbar({ backgroundColor }) {
             ))}
           </ul>
         </div>
+
+        
+        
         <div className={Styles.profile}>
           <BsFillPersonFill className={Styles.icons} />
           <BsCart3 className={Styles.icons} />
         </div>
-        <div className={Styles.Icon} onClick={toggleMenu()}>
+
+        <div className={Styles.Icon} onClick={() => setShowMenu(!showMenu)} >
           &#9776;
         </div>
+
+        
       </div>
     </>
   );

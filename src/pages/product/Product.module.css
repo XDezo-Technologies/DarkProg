@@ -66,3 +66,15 @@ button{
     color: #F57C51;
     padding: 10px 16px;
 }
+
+@media screen and (max-width: 768px) {
+    .product_section, .product_section1, .work{
+        padding: 30px 10px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .product_section, .product_section1, .work{
+        padding: 0;
+    }
+  }
