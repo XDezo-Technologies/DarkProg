@@ -41,6 +41,38 @@
     gap: 28px;
 }
 
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 300px;
+    gap: 20px;
+}
+
+.searchbutton{
+    border: none;
+    height: 31px;
+}
+
+.searchbutton:focus{
+    outline: none;
+}
+
+.lens{
+    height: 30px;
+    width: 30px;
+    color: #F57C51  ;
+}
+
 .heading{
     font-size: 40px;
     font-weight: bold;
