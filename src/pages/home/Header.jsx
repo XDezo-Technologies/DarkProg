@@ -63,12 +63,7 @@ function Header() {
 
         <div className={Styles.product_section1}>
           <div className={Styles.heading1}>From The Blog</div>
-          <div className={Styles.product}>
-            <Blogs />
-            <Blogs />
-            <Blogs />
-          </div>
-
+          <Blogs blogsCount = {3} />
           <div className={Styles.btn}>
 
             <Link to="/Blog"><button>View More <AiOutlineRight /></button></Link>

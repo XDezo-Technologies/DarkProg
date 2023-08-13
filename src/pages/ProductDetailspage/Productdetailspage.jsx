@@ -48,11 +48,10 @@ function Productdetailspage() {
 
                     <div className={Styles.product_section}>
           <div className={Styles.heading}>Multi-Purpose Templates</div>
-          <div className={Styles.product}>
-            <Product />
-            <Product />
-            <Product />
-          </div>
+
+            <Product productsCount = {3} />
+
+
 
           
         </div>

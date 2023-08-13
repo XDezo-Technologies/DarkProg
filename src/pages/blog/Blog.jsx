@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Styles from './Blog.module.css';
 import Navbar from '../home/Navbar';
 import { AiOutlineRight } from 'react-icons/ai';
@@ -6,6 +7,11 @@ import Footer from '../home/Footer';
 
 
 function Blog() {
+
+    const[blogsCount, setBlogsCount] = useState(6);
+    const loadMoreBlogs = () => {
+        setBlogsCount(blogsCount + 3);
+    };
     return (
         <>
             <div className={Styles.header}>
@@ -21,23 +27,10 @@ function Blog() {
 
             <div className={Styles.product_section1}>
                 <div className={Styles.heading1}>From The Blog</div>
-                <div className={Styles.product}>
-                    <Blogs />
-                    <Blogs />
-                    <Blogs />
-                </div>
-                <div className={Styles.product}>
-                    <Blogs />
-                    <Blogs />
-                    <Blogs />
-                </div>
-                <div className={Styles.product}>
-                    <Blogs />
-                    <Blogs />
-                    <Blogs />
-                </div>
+                <Blogs blogsCount ={blogsCount} />
+
                 <div className={Styles.btn}>
-                    <button>View More <AiOutlineRight /></button>
+                    <button onClick={loadMoreBlogs}>View More <AiOutlineRight /></button>
                 </div>
             </div>
 
