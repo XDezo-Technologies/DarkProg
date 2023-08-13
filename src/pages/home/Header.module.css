@@ -173,9 +173,3 @@ button{
         padding: 0;
     }
   }
-
-  @media (width > 1872px) {
-    .container:last-child{
-        flex: 0 0 300px;
-    }
-  }
