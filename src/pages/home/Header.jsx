@@ -55,15 +55,9 @@ function Header() {
 
         <div className={Styles.product_section}>
           <div className={Styles.heading}>Multi-Purpose Templates</div>
-          <div className={Styles.product}>
-            <Product />
-            <Product />
-            <Product />
-          </div>
-          <div className={Styles.btn}>
-           
-              <Link to="/Products"><button>View More <AiOutlineRight /></button></Link>
-              
+            <Product productsCount =  {3}/>
+          <div className={Styles.btn}>  
+            <Link to="/Products"><button>View More <AiOutlineRight /></button></Link>     
           </div>
         </div>
 

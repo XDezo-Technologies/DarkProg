@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Navbar from '../home/Navbar';
 import Styles from './Product.module.css';
 import { AiOutlineRight } from 'react-icons/ai';
@@ -6,6 +7,11 @@ import Footer from '../home/Footer';
 
 
 function Products() {
+  const [displayCount, setDisplayCount] = useState(6); // Initial display count
+
+  const loadMoreProducts = () => {
+    setDisplayCount(displayCount + 3); // Increment display count by 3
+  };
     return (
       <>
         <div className={Styles.header}>
@@ -20,25 +26,11 @@ function Products() {
         <div className={Styles.product_section}>
           <div className={Styles.heading}>Multi-Purpose Templates</div>
           <div className={Styles.product}>
-            <Product />
-            <Product />
-            <Product />
-          </div>
-
-          <div className={Styles.product}>
-            <Product />
-            <Product />
-            <Product />
-          </div>
-
-          <div className={Styles.product}>
-            <Product />
-            <Product />
-            <Product />
+            <Product productsCount = {displayCount}/>
           </div>
 
           <div className={Styles.btn}>
-            <button>View More <AiOutlineRight /></button>
+            <button onClick={loadMoreProducts}>View More <AiOutlineRight /></button>
           </div>
         </div>
         
