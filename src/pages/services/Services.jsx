@@ -46,15 +46,17 @@ function Services() {
         <div className={Styles.Categories1}>
           <table>
             <tr>
-              <th>  <div className={Styles.cat}>Personal</div>  <i class="fa-solid fa-caret-down"></i> </th>
-              <th> <div className={Styles.cat}>Entertaiment</div> <i class="fa-solid fa-caret-down"></i></th>
-              <th> <div className={Styles.cat}>Web Development</div> <i class="fa-solid fa-caret-down"></i></th>
-              <th> <div className={Styles.cat}>Portfolio</div> <i class="fa-solid fa-caret-down"></i></th>
-              <th> <div className={Styles.cat}>Technology</div> <i class="fa-solid fa-caret-down"></i> </th>
+              <th>  Personal  <i class="fa-solid fa-caret-down"></i> </th>
+              <th> Entertaiment <i class="fa-solid fa-caret-down"></i></th>
+              <th> Web Development <i class="fa-solid fa-caret-down"></i></th>
+              <th> Portfolio <i class="fa-solid fa-caret-down"></i></th>
+              <th> Technology <i class="fa-solid fa-caret-down"></i> </th>
             </tr>
           </table>
 
         </div>
+
+      </div>
 
         <div className={Styles.Payment}>
           <div className={Styles.Payment1}>
@@ -115,6 +117,19 @@ function Services() {
 
           </div>
 
+          {/* <div className={Styles.Categories1}>
+          <table>
+            <tr>
+              <th>  <div className={Styles.cat}>Personal</div>  <i class="fa-solid fa-caret-down"></i> </th>
+              <th> <div className={Styles.cat}>Entertaiment</div> <i class="fa-solid fa-caret-down"></i></th>
+              <th> <div className={Styles.cat}>Web Development</div> <i class="fa-solid fa-caret-down"></i></th>
+              <th> <div className={Styles.cat}>Portfolio</div> <i class="fa-solid fa-caret-down"></i></th>
+              <th> <div className={Styles.cat}>Technology</div> <i class="fa-solid fa-caret-down"></i> </th>
+            </tr>
+          </table> */}
+
+        {/* </div> */}
+
         </div>
 
 
@@ -130,7 +145,7 @@ function Services() {
 
 
 
-      </div>
+      
 
 
         <Footer/>
