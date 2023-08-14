@@ -24,7 +24,7 @@ a{
 }
 
 .leftbar{
-    flex: 1.5;
+    flex: 1.5 1 400px;
 }
 
 .leftbar img{
@@ -63,7 +63,7 @@ textarea{
 }
 
 .rightbar{
-    flex: 1;
+    flex: 1 1 270px;
     background-color: #EEEDED;
     border: 1px solid;
     padding: 1rem 2rem 1rem 2rem;

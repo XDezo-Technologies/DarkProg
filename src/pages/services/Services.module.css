@@ -56,7 +56,7 @@
 }
 
 .box1{
-    flex: 1;
+    flex: 1 1 260px;
     border: 1px solid;
     text-align: center;
     padding-bottom: 71px;
@@ -67,7 +67,7 @@
 
 
 .box2{
-    flex: 1;
+    flex: 1 1 260px;
     border: 1px solid;
     text-align:center;
     padding-bottom: 71px;
@@ -76,7 +76,7 @@
 }
 
 .box3{
-    flex: 1;
+    flex: 1 1 260px;
     border: 1px solid ;
     text-align: center;
     padding-bottom: 71px;
@@ -110,6 +110,11 @@
     padding: 1.5rem;
 }
 
+.Categoriesc{
+    display: flex;
+    flex-direction: column;
+}  
+
 .Categories{
     padding-top: 2rem ;
     padding-bottom:2rem ;
@@ -117,22 +122,37 @@
 
 }
 
+.Categories1 tr{
+    width: 380px;
+    flex: 1;
+}
+
 .Categories1 th{
-    border: 1px solid black;
+   
+    border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
+   
     
 }
 
-.cat{
+/* .cat{
     width: 350px;
     text-align: start;
+    
+} */
+
+
+
+
+.Categories1 table{
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    display: flex;
 }
 
 
-.Categories1, th{
-    padding: 0 90px;
-}
 
 th{
     padding: 29px 46px;
@@ -223,8 +243,9 @@ padding-top: 3rem;
 
 .qA2 table{
     width: 100%;
-   padding: 30px 90px;
+    padding: 30px 90px;
 }
+
 
 
 
