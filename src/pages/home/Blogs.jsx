@@ -18,7 +18,7 @@ function Blogs(props) {
         {
           image: t1,
           image1: profile,
-          title : "Which One Is Best? ",
+          title : "Graphic Designer",
           desc : "Frameworks are ready-to-use collections of libraries, modules, and features that are built on top of other languages.",
           name : "Alishma Sherchan",
           postdate : "July 2023",
@@ -138,7 +138,7 @@ function Blogs(props) {
             {
               image: blogs,
               image1: profile,
-              title : "Which One Is Best? ",
+              title : "Graphic Designer",
               desc : "Frameworks are ready-to-use collections of libraries, modules, and features that are built on top of other languages.",
               name : "Alishma Sherchan",
               postdate : "July 2023",
@@ -152,12 +152,18 @@ function Blogs(props) {
               postdate : "July 2023",
             },
       ];
+      const displayedBlog = blog
+          .filter((item) =>
+            item.title.toLowerCase().includes(props.searchQuery?.toLowerCase() || "")
+          )
+          .slice(0, props.blogsCount);
 
-      const displayedBlog = blog.slice(0, props.blogsCount);
     return (
         <div className={Styles.product}>
             {displayedBlog.map((item, index) => (
-                <div className={Styles.container}>
+                <div className={Styles.container} style={{
+                  flex: displayedBlog.length > 2 ? "1 1 300px" : "none"
+                }}>
                     <div className={Styles.banner}>
                     <Link to="/Blog_detail"><img src={item.image} alt="" /></Link> 
                     </div>

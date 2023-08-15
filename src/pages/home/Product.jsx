@@ -55,7 +55,7 @@ function Product(props) {
         },
         {
             image: webproduct,
-            title : "Restruent Management system",
+            title : "React Restruent Management system",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
             cost : "NRP. 2500/Year",
         },
@@ -88,7 +88,9 @@ function Product(props) {
     return (
         <div className={Styles.product}>
             {displayedProducts.map((item, index) => (
-                <div key={index} className={Styles.container}>
+                <div key={index} className={Styles.container} style={{
+                    flex: displayedProducts.length > 1 ? "1 1 300px" : "none"
+                  }}>
                     <div className={Styles.banner}>
                         <Link to="/Productdetailspage"><img src={item.image} alt="" /></Link>
                     </div>

@@ -4,6 +4,7 @@ import Navbar from '../home/Navbar';
 import { AiOutlineRight } from 'react-icons/ai';
 import Blogs from '../home/Blogs';
 import Footer from '../home/Footer';
+import { BiSearch } from 'react-icons/bi';
 
 
 function Blog() {
@@ -18,6 +19,7 @@ function Blog() {
     const handleSearchChange = (event) => {
         setSearchQuery(event.target.value);
       };
+
     return (
         <>
             <div className={Styles.header}>
@@ -27,26 +29,23 @@ function Blog() {
                         <div className={Styles.title}>Blog</div>
                     </div>
                 </div>
-
-
             </div>
 
-            <div className={Styles.product_section1}>
-                <div className={Styles.productsrch}>
-                    <div className={Styles.heading1}>From The Blog</div>
-                    <div className={Styles.productsearchbar}>
-                        <input className={Styles.searchbutton} placeholder='Search....' onChange={handleSearchChange} value={searchQuery} type="text" />
-                        {searchQuery && (
-                            <button className={Styles.clearButton} onClick={() => setSearchQuery("")}>
-                                Clear
-                            </button>
-                        )}
-
-                        <Blogs blogsCount={blogsCount} />
+            <div className={Styles.blog_section}>
+                <div className={Styles.search}>
+                    <div className={Styles.heading}>Blogs</div>
+                    <div className={Styles.searchbar}>
+                    <input className={Styles.searchbutton} placeholder='Search....' onChange={handleSearchChange} value={searchQuery} type="text" />
+                    {searchQuery && ( 
+                    <button className={Styles.clearButton} onClick={() => setSearchQuery("")}>
+                        Clear
+                    </button>
+                    )}
+                    <BiSearch className={Styles.lens} />
                     </div>
                 </div>
                 <div className={Styles.product}>
-                    <Blog blogsCount={blogsCount} searchQuery={searchQuery} />
+                    <Blogs blogsCount = {blogsCount}  searchQuery={searchQuery}/>
                 </div>
 
                 <div className={Styles.btn}>
