@@ -1,9 +1,27 @@
 import Navbar from '../home/Navbar';
+import React, {useState} from 'react';
 import Styles from './Services.module.css'
 import Footer from '../home/Footer'
 import { Link } from 'react-router-dom';
 
 function Services() {
+
+  const [isAnswerVisible, setIsAnswerVisible] = useState(false);
+
+  const toggleAnswer = () => {
+    setIsAnswerVisible(!isAnswerVisible);
+  };
+
+  const faqData = [
+    {
+      question: 'What is React?',
+      answer: 'React is a JavaScript library for building user interfaces.',
+    },
+    {
+      question: 'How do I install React?',
+      answer: 'You can install React using npm or yarn by running: npm install react or yarn add react.',
+    },
+  ];
   return (
     <>
       <div className={Styles.header}>
@@ -106,10 +124,7 @@ function Services() {
             <button><Link to="/payment">Get Started <i class="fa-solid fa-angle-right"></i> </Link></button>
           </div>
         </div>
-
-
       </div>
-
 
       <div className={Styles.Refundpolicy}>
         <div className={Styles.refund}>
@@ -167,6 +182,16 @@ function Services() {
 
       <Footer />
 
+      <div className="faq-section">
+          {faqData.map((item, index) => (
+            <div className="faq-item">
+            <div className="question" onClick={toggleAnswer}>
+              {item.question}
+            </div>
+            {isAnswerVisible && <div className="answer">{item.answer}</div>}
+          </div>
+          ))}
+        </div>
     </>
   );
 }
