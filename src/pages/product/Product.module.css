@@ -110,3 +110,16 @@ button{
         padding: 0;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 350px;
+    }
+
+    .product, .heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }

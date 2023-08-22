@@ -23,7 +23,7 @@ function Team() {
 
         <div className={Styles.ceo}>
             <div className={Styles.profile}>
-                <img src={CEO} alt="" />
+                <img className={Styles.owner} src={CEO} alt="" />
             </div>
             <div className={Styles.message}>
                 <div className={Styles.heading}>

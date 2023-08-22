@@ -89,7 +89,7 @@ function Product(props) {
         <div className={Styles.product}>
             {displayedProducts.map((item, index) => (
                 <div key={index} className={Styles.container} style={{
-                    flex: displayedProducts.length > 1 ? "1 1 300px" : "none",
+                    flex: displayedProducts.length > 1 ? "1 1 350px" : "none",
                   }}>
                     <div className={Styles.banner}>
                         <Link to="/Productdetailspage"><img src={item.image} alt="" /></Link>

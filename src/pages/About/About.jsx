@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Styles from './About.module.css'
 import Navbar from '../home/Navbar';
 import about from '../../images/about.png';
@@ -7,6 +7,27 @@ import alishma from '../../images/alishma.png'
 import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
 
 function About() {
+
+  const reviews = [
+    {
+      name : "Alishma Sherchan",
+      review : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+    },
+    {
+      name : "Buddhi Raj Gurung",
+      review : "Cool",
+    },
+  ];
+
+  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
+  
+    const goToPreviousReview = () => {
+      setCurrentReviewIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : reviews.length - 1));
+    };
+  
+    const goToNextReview = () => {
+      setCurrentReviewIndex((prevIndex) => (prevIndex < reviews.length - 1 ? prevIndex + 1 : 0));
+    };
   return (
     <>
             <div className={Styles.header}>
@@ -20,7 +41,7 @@ function About() {
 
         <div className={Styles.ceo}>
             <div className={Styles.profile}>
-                <img src={about} alt="" />
+                <img className={Styles.owner} src={about} alt="" />
             </div>
             <div className={Styles.message}>
                 <div className={Styles.heading}>
@@ -55,26 +76,18 @@ function About() {
         </div>
 
         <div className={Styles.feedback}>
-          <div className={Styles.left}>
+          <div className={Styles.left} onClick={goToPreviousReview}>
             <AiOutlineLeft className={Styles.icons} />
           </div>
-          <div className={Styles.box}>
+          <div key={currentReviewIndex} className={Styles.box}>
             <div className={Styles.photo}>
               <img className={Styles.img} src={alishma} alt="" />
             </div>
-
-            <div className={Styles.name}>
-              Alishma
-            </div>
-
-            <div className={Styles.star}>
-              *****
-            </div>
-            <div className={Styles.review}>
-              Contrary to popular belief, Lorem Ipsum is not simply random text Contrary to popular belief, Lorem Ipsum is not simply random text Contrary to popular belief, Lorem Ipsum is not simply random text Contrary to popular belief, Lorem Ipsum is not simply random text
-            </div>
+            <div className={Styles.name}>{reviews[currentReviewIndex].name}</div>
+            <div className={Styles.star}>*****</div>
+            <div className={Styles.review}>{reviews[currentReviewIndex].review}</div>
           </div>
-          <div className={Styles.right}>
+          <div className={Styles.right} onClick={goToNextReview}>
             <AiOutlineRight className={Styles.icons} />
           </div>
         </div>
