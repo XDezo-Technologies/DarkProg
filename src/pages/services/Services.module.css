@@ -89,14 +89,9 @@
 }
 
 .box1  p{
-    padding-top: 62px;
+    padding: 30px 30px;
 }
-.box2  p{
-    padding-top: 62px;
-}
-.box3  p{
-    padding-top: 62px;
-}
+
 
 .box1 i{
     font-size: 35px;
@@ -138,8 +133,14 @@
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    flex-direction: column;
+    margin: 30px 90px;
     font-size: 20px;
+
+}
+.name{
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -171,7 +172,7 @@
 
 .Payment1 h1{
 text-align: center;
-padding-top: 3rem;
+padding-top: 1rem;
 }
 
 .payment2{
@@ -179,6 +180,10 @@ padding-top: 3rem;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
     text-align: center;
     padding: 3rem;
+}
+.ptag{
+    text-align: center;
+    margin-top: 10px;
 }
 
 .payment3{
@@ -214,8 +219,8 @@ padding-top: 3rem;
 
 .Refundpolicy{
     background-color:rgb(230, 229, 229);
-    padding: 30px 90px;
-    margin: 30px;
+    padding: 20px 90px;
+    margin: 30px 0;
 }
 
 
@@ -232,7 +237,6 @@ padding-top: 3rem;
 
 .qA1{
     text-align: center;
-    padding-top: 2rem;
     
 }
 
@@ -241,7 +245,14 @@ padding-top: 3rem;
     margin-bottom: 30px;
 }
 
-
+.qa2{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 30px 90px;
+    font-size: 20px;
+}
 
 
 

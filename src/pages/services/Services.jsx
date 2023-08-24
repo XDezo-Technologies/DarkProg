@@ -1,27 +1,75 @@
 import Navbar from '../home/Navbar';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Styles from './Services.module.css'
 import Footer from '../home/Footer'
 import { Link } from 'react-router-dom';
+import { AiFillCaretDown } from 'react-icons/ai';
 
 function Services() {
 
-  const [isAnswerVisible, setIsAnswerVisible] = useState(false);
-
-  const toggleAnswer = () => {
-    setIsAnswerVisible(!isAnswerVisible);
-  };
-
   const faqData = [
     {
-      question: 'What is React?',
+      question: 'What do you want?',
       answer: 'React is a JavaScript library for building user interfaces.',
     },
     {
       question: 'How do I install React?',
       answer: 'You can install React using npm or yarn by running: npm install react or yarn add react.',
     },
+    {
+      question: 'How do I install React?',
+      answer: 'You can install React using npm or yarn by running: npm install react or yarn add react.',
+    },
+
   ];
+
+  const categories = [
+    {
+      Category: 'Personal',
+      Data: 'Reactjs website',
+    },
+
+    {
+      Category: 'Entertainment',
+      Data: 'Reactjs website',
+    },
+
+    {
+      Category: 'Web Development',
+      Data: 'Reactjs website',
+    },
+
+    {
+      Category: 'Portfolio',
+      Data: 'Reactjs website',
+    },
+
+    {
+      Category: 'Technology',
+      Data: 'Reactjs website',
+    },
+
+  ];
+
+
+  const [isAnswerVisible, setIsAnswerVisible] = useState(new Array(faqData.length).fill(false));
+
+  const toggleAnswer = (index) => {
+    const newisAnswerVisible = [...isAnswerVisible];
+    newisAnswerVisible[index] = !newisAnswerVisible[index];
+    setIsAnswerVisible(newisAnswerVisible);
+  };
+
+  const [isDataVisible, setIsDataVisible] = useState(new Array(categories.length).fill(false));
+
+  const toggleData = (index) => {
+    const newisDataVisible = [...isDataVisible];
+    newisDataVisible[index] = !newisDataVisible[index];
+    setIsDataVisible(newisDataVisible);
+  };
+
+
+
   return (
     <>
       <div className={Styles.header}>
@@ -42,13 +90,13 @@ function Services() {
               <p>In publishing and graphic design, Lorem ipsum is a <br />placeholder text commonly used to demonstrate the visual form of a document<br /> or a typeface without relying on meaningful content.</p>
 
             </div>
-            <div className={Styles.box2}>
+            <div className={Styles.box1}>
               <i class="fa-solid fa-lightbulb"></i>
               <h2>Best Ideas</h2>
               <p>In publishing and graphic design, Lorem ipsum is a <br />placeholder text commonly used to demonstrate the visual form of a document or<br /> a typeface without relying on meaningful content.</p>
 
             </div>
-            <div className={Styles.box3}>
+            <div className={Styles.box1}>
               <i class="fa-solid fa-gear"></i>
               <h2>Simple Setting</h2>
               <p>In publishing and graphic design, Lorem ipsum is a <br />placeholder text commonly used to demonstrate the visual form of a document or<br /> a typeface without relying on meaningful content.</p>
@@ -57,45 +105,22 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className={Styles.Categoriesc}>
+      <div div className={Styles.Categoriesc}>
         <div className={Styles.Categories}>
           <h1>Categories</h1>
         </div>
-        <div className={Styles.Categories1}>
-          <div className={Styles.cat1}>
-            <div className={Styles.cat2}>
-              <div className={Styles.name}>Personal</div>  <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div className={Styles.cat3}>
-            </div>
+        <div className="faq-section">
+          {categories.map((item, index) => (
+            <div className={Styles.qa2} key={index}>
 
-            <div className={Styles.cat2}>
-              <div className={Styles.name1}>Entertainment</div> <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div className={Styles.cat5}></div>
+              <div className={Styles.name} onClick={() => toggleData(index)}>
+                <div>{item.Category}</div> <AiFillCaretDown />
+              </div>
 
-            <div className={Styles.cat2}>
-              <div className={Styles.name2}> Web Development</div> <i class="fa-solid fa-caret-down"></i>
+              {isDataVisible[index] && <div className="ans">{item.Data}</div>}
             </div>
-            <div className={Styles.cat7}></div>
-
-            <div className={Styles.cat2}>
-              <div className={Styles.name3}>Portfolio</div> <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div className={Styles.cat9}>
-            </div>
-
-            <div className={Styles.cat2}>
-              <div className={Styles.name4}>Technology</div>  <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div className={Styles.cat11}>
-
-            </div>
-
-          </div>
-
+          ))}
         </div>
-
       </div>
 
       <div className={Styles.Payment}>
@@ -105,7 +130,7 @@ function Services() {
         <div className={Styles.Mpayment}>
           <div className={Styles.payment2}>
             <h3>Free</h3>
-            <p>Rs 0/month</p><br />
+            <p className={Styles.ptag}>Rs 0/month</p><br />
             <p><i class="fa-solid fa-check"></i> Free Membership</p>
             <p><i class="fa-solid fa-check"></i> 30Gb Storage</p>
             <p><i class="fa-solid fa-check"></i> 1 Personal Email</p> <br />
@@ -115,11 +140,15 @@ function Services() {
 
           <div className={Styles.payment3}>
             <h3> Premium</h3>
-            <p>Rs 1000/month</p><br />
+            <p className={Styles.ptag}>Rs 1000/month</p><br />
             <p><i class="fa-solid fa-check"></i> Free Membership</p>
             <p><i class="fa-solid fa-check"></i> 1000Gb Storage</p>
             <p><i class="fa-solid fa-check"></i> 2 Personal Email</p>
-            <p><i class="fa-solid fa-check"></i> 1 FTP Account</p><br />
+            <p><i class="fa-solid fa-check"></i> 1 FTP Account</p><br/>
+
+
+
+
 
             <button><Link to="/payment">Get Started <i class="fa-solid fa-angle-right"></i> </Link></button>
           </div>
@@ -141,57 +170,23 @@ function Services() {
         <div className={Styles.qA1}>
           <h1>Q&A</h1>
         </div>
-        <div className={Styles.qA2}>
-          <div className={Styles.qa3}>
+        <div className="faq-section">
+          {faqData.map((item, index) => (
+            <div className={Styles.qa2} key={index}>
 
-          <div className={Styles.cat2}>
-              <div className={Styles.name}>What do you want?</div>  <i class="fa-solid fa-caret-down"></i>
+              <div className={Styles.name} onClick={() => toggleAnswer(index)}>
+                <div>{item.question}</div> <AiFillCaretDown />
+              </div>
+
+              {isAnswerVisible[index] && <div className="ans">{item.answer}</div>}
             </div>
-            <div className={Styles.cat3}>
-            </div>
-
-            <div className={Styles.cat2}>
-              <div className={Styles.name1}>What do you want?</div> <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div className={Styles.cat5}></div>
-
-            <div className={Styles.cat2}>
-              <div className={Styles.name2}>What do you want?</div> <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div className={Styles.cat7}></div>
-
-            <div className={Styles.cat2}>
-              <div className={Styles.name3}>What do you want?</div> <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div className={Styles.cat9}>
-            </div>
-
-            <div className={Styles.cat2}>
-              <div className={Styles.name4}>What do you want?</div>  <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div className={Styles.cat11}>
-
-            </div>
-          </div>
-
-
-
-
+          ))}
         </div>
+
       </div>
 
       <Footer />
 
-      <div className="faq-section">
-          {faqData.map((item, index) => (
-            <div className="faq-item">
-            <div className="question" onClick={toggleAnswer}>
-              {item.question}
-            </div>
-            {isAnswerVisible && <div className="answer">{item.answer}</div>}
-          </div>
-          ))}
-        </div>
     </>
   );
 }
