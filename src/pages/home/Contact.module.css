@@ -2,6 +2,10 @@ span{
     color: #F57C51;
 }
 
+span a{
+    color: #F57C51;
+}
+
 .contain{
     padding: 30px 90px ;
 }

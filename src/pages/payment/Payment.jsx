@@ -3,6 +3,7 @@ import Styles from './Payment.module.css'
 import Footer from '../home/Footer';
 import Navbar from '../home/Navbar';
 import payment from '../../images/payment.png';
+import { Link } from 'react-router-dom';
 
 function Payment() {
 
@@ -31,7 +32,7 @@ function Payment() {
     <div className={Styles.pay}>
       <Navbar backgroundColor="black" />
       <div className={Styles.payment}>
-        <div>Product details <i class="fa-solid fa-angle-right"></i> Payment</div>
+        <div><Link to="/productdetailspage">Product details</Link><i class="fa-solid fa-angle-right"></i><span> Payment </span> </div>
         <div className={Styles.method}>Select a Payment Method</div>
       </div>
 

@@ -4,10 +4,86 @@ import Footer from '../home/Footer'
 import Styles from './Productdetailspage.module.css'
 import webproduct from '../../images/webproduct.png'
 import Product from '../home/Product';
-import {Link} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 
 function Productdetailspage() {
+    const products = [
+        {
+          image: webproduct,
+          title : "Trend website Template",
+          desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+          cost : "NRP. 2500/Year",
+        },
+        {
+            image: webproduct,
+            title : "Ecommerce website",
+            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+            cost : "NRP. 2500/Year",
+        },
+        {
+            image: webproduct,
+            title : "Pure html css",
+            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+            cost : "NRP. 2500/Year",
+        },
+        {
+          image: webproduct,
+          title : "React project",
+          desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+          cost : "NRP. 2500/Year",
+        },
+        {
+            image: webproduct,
+            title : "Wordpress Template",
+            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+            cost : "NRP. 2500/Year",
+        },
+        {
+            image: webproduct,
+            title : "Django Project",
+            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+            cost : "NRP. 2500/Year",
+        },
+        {
+          image: webproduct,
+          title : "Travel recording website",
+          desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+          cost : "NRP. 2500/Year",
+        },
+        {
+            image: webproduct,
+            title : "Sweet Memories",
+            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+            cost : "NRP. 2500/Year",
+        },
+        {
+            image: webproduct,
+            title : "React Restruent Management system",
+            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+            cost : "NRP. 2500/Year",
+        },
+        {
+          image: webproduct,
+          title : "School Mangement System",
+          desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+          cost : "NRP. 2500/Year",
+        },
+        {
+            image: webproduct,
+            title : "Manage inventory",
+            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+            cost : "NRP. 2500/Year",
+        },
+        {
+            image: webproduct,
+            title : "Porfoloio website",
+            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+            cost : "NRP. 2500/Year",
+        },
+      ];
 
+      const { productId } = useParams();
+      const product = products[productId];
     return (
 
         <div className={Styles.header}>
@@ -19,11 +95,11 @@ function Productdetailspage() {
                     </div>
                     <div className={Styles.products}>
                         <div className={Styles.productimg}>
-                            <img src={webproduct} alt="" />
+                            <img src={product.image} alt="" />
                         </div>
                         <div className={Styles.productd}>
-                            <h3>Product Name</h3>
-                            <p>Rs30000</p>
+                            <h3>{product.title}</h3>
+                            <p>{product.cost}</p>
 
                             <button>BuyNow</button> <br />
 
@@ -37,11 +113,10 @@ function Productdetailspage() {
 
                     <div className={Styles.Content}>
                         <div className={Styles.content1}>
-                            <h1>Trend Website Design</h1>
+                            <h1>{product.title}</h1>
                         </div>
                         <div className={Styles.content2}>
-                            <p>For your business, too, your customers’ wins are your wins. If you’re a small retailer, this is true not just with your in-store customer service, but also your e-commerce website’s overall UX, its check-out flow, your online return options, and your product descriptions. By writing accurate, educational, and engaging product descriptions, a copywriter serves their customers just as much as a sales associate does when someone walks through your shop’s front door. For your business, too, your customers’ wins are your wins. If you’re a small retailer, this is true not just with your in-store customer service, but also your e-commerce website’s overall UX, its check-out flow, your online return options, and your product descriptions. By writing accurate, educational, and engaging product descriptions, a copywriter serves their customers just as much as a sales associate does when someone walks through your shop’s front door.
-                                For your business, too, your customers’ wins are your wins. If you’re a small retailer, this is true not just with your in-store customer service, but also your e-commerce website’s overall UX, its check-out flow, your online return options, and your product descriptions. By writing accurate, educational, and engaging product descriptions, a copywriter serves their customers just as much as a sales associate does when someone walks through your shop’s front door.</p>
+                            <p>{product.desc}</p>
                         </div>
 
                     </div>
@@ -55,8 +130,6 @@ function Productdetailspage() {
 
           
         </div>
-
-
 
                 </div>
             </div>
