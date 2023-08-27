@@ -68,7 +68,6 @@
   }
 
   .members{
-    flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -78,12 +77,11 @@
   }
 
   .member{
-    width: calc(33.33% - 37px);
-    overflow: hidden;
+    flex: 1 1 350px;
   }
 
   .member .img{
-    max-width: 100%;
+    max-width: 385px;
     height: 506px;
   }
 
@@ -99,20 +97,24 @@
   }
 
   @media screen and (max-width: 768px) {
-    .ceo, .team{
-        padding: 30px 10px;
+    .team{
+        padding: 30px 0;
         text-align: center;
     }
-  
+    .ceo{
+      padding: 30px 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    
+  .owner{
+    flex: 1 1 350px;
+  }
     .members{
       flex-direction: column;
       align-items: center;
     }
-  }
 
-  @media screen and (max-width: 945px) {
-    .members{
-      align-items: center;
-    }
   }
 

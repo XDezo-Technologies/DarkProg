@@ -96,6 +96,8 @@
     padding: 26px 52px 37px 52px;
     text-align: center;
     background-color: #D9D9D9;
+    height: 400px;
+    flex: 1;
   }
 
   .img{
@@ -113,6 +115,31 @@
     color: #F57C51;
     font-size: 30px;
   }
+
+  @media screen and (max-width: 768px) {
+    .team{
+        padding: 30px 0;
+        text-align: center;
+    }
+    .ceo{
+      padding: 30px 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    
+  .owner{
+    flex: 1 1 350px;
+  }
+    .members{
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+
+
 
 
 
