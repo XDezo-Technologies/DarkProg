@@ -25,8 +25,9 @@ function Footer() {
             <ul>
                 <li className={Styles.li}>Lisense</li>
                 <li className={Styles.li}>FAQ</li>
-                  <Link to="/about us"><li className={Styles.li}>About Us</li></Link>
+                <Link to="/about us"><li className={Styles.li}>About Us</li></Link>
                 <Link to="/Products"><li className={Styles.li}>Products</li></Link>
+                <Link to="/blog"><li className={Styles.li}>Blog</li></Link>
                 <li className={Styles.li}>Decentralised Website Builder</li>
             </ul>
           </div>

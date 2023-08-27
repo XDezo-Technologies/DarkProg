@@ -24,7 +24,7 @@ a{
 }
 
 .leftbar{
-    flex: 1.5 1 400px;
+    flex: 2.5 1 400px;
 }
 
 .leftbar img{
@@ -50,6 +50,30 @@ a{
     padding: 2rem;
 }
 
+.btn1{
+   text-align: end;
+   
+    
+} 
+
+.button{
+    background-color: #F57C51;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    
+    border-radius: 6px;
+  }
+
+ .anker{
+
+    color: #F57C51;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+  }
+
+
 form input,
 form textarea {
   width: 100%;
@@ -66,7 +90,7 @@ textarea{
     flex: 1 1 270px;
     background-color: #EEEDED;
     border: 1px solid;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 0 1rem 0;
 }
 
 .latest{
@@ -76,8 +100,11 @@ textarea{
 }
 
 .main{
-    padding: 1rem;
+    padding-bottom: 1rem;
+    
 }
+
+
 .sidebar_img img{
     width: 100%;
     height: 250px;
@@ -91,6 +118,7 @@ textarea{
 .btn{
     width: 100%;
     text-align: center;
+    
 }
 
 button{

@@ -126,8 +126,11 @@
 .banner img{
     width: 100%;
     height: 258px;
+<<<<<<< HEAD
+=======
     overflow: hidden;
     object-position: top;
+>>>>>>> afcafa37ea940d095397f3649733efc41a309cb7
     object-fit: cover;
 }
 
@@ -143,11 +146,7 @@ button{
     padding: 10px 16px;
 }
 
-.pic{
-    height: 54px;
-    width: 54px;
-    border-radius: 50%;
-}
+
 
 .postedby{
     display: flex;
