@@ -125,19 +125,12 @@ function Productdetailspage() {
           <div className={Styles.heading}>Multi-Purpose Templates</div>
 
             <Product productsCount = {3} />
-
-
-
-          
         </div>
 
                 </div>
             </div>
             <Footer/>
         </div>
-
-
-        
     );
 }
 
