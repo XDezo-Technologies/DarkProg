@@ -13,7 +13,7 @@ function Products() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const loadMoreProducts = () => {
-    setDisplayCount(displayCount + 3); // Increment display count by 3
+    setDisplayCount(displayCount + 3);
   };
 
   const handleSearchChange = (event) => {

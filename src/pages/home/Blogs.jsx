@@ -165,11 +165,11 @@ function Blogs(props) {
                   flex: displayedBlog.length > 2 ? "1 1 300px" : "none"
                 }}>
                     <div className={Styles.banner}>
-                    <Link to={'/Blog_detail/${index}'}><img src={item.image} alt="" /></Link> 
+                    <Link to={`/Blog_detail/${index}`}><img src={item.image} alt="" /></Link> 
                     </div>
                     <div className={Styles.content}>
                         
-                        <Link to={'/Blog_detail/${index}'}><div className={Styles.title1}>{item.title}</div></Link>
+                        <Link to={`/Blog_detail/${index}`}><div className={Styles.title1}>{item.title}</div></Link>
                         
                         <div className={Styles.description1}>{item.desc}</div>
                         <div className={Styles.postedby}>
