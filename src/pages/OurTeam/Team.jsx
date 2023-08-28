@@ -46,9 +46,6 @@ function Team() {
                 <Member image={t1} post='Company Manager' name = 'Hari prashad'/>
                 <Member image={t2} post='Graphic designer' name = 'Hetlar maya' />
                 <Member image={about} post='Disital Marketing' name = 'Prashad Bahadur'/>
-            </div>
-
-            <div className={Styles.members}>
                 <Member image={t1} post='Company Manager' name = 'Hari prashad'/>
                 <Member image={t2} post='Graphic designer' name = 'Hetlar maya' />
                 <Member image={about} post='Disital Marketing' name = 'Prashad Bahadur'/>
