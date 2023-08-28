@@ -31,7 +31,6 @@ function App() {
           <Route path='/mission' Component={Mission} />
           <Route path="/productdetailspage/:productId" Component={Productdetailspage} products={products} />
           <Route path='/blog_detail/:blogId' Component={Blog_detail} />
-          <Route path='/blog_detail' Component={Blog_detail} />
           <Route path='/payment' Component={Payment} />
 
         </Routes>
