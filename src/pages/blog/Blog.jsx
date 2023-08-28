@@ -44,7 +44,7 @@ function Blog() {
                     <BiSearch className={Styles.lens} />
                     </div>
                 </div>
-                <div className={Styles.product}>
+                <div className={Styles.blog}>
                     <Blogs blogsCount = {blogsCount}  searchQuery={searchQuery}/>
                 </div>
 
