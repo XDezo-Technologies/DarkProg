@@ -3,8 +3,9 @@ import Navbar from '../home/Navbar';
 import Footer from '../home/Footer'
 import Styles from './Productdetailspage.module.css'
 import webproduct from '../../images/webproduct.png'
-import Product from '../home/Product';
+
 import {Link, useParams} from 'react-router-dom';
+import Product from '../home/Product';
 
 function Productdetailspage() {
     const products = [
@@ -91,7 +92,7 @@ function Productdetailspage() {
                 <Navbar backgroundColor="Black" />
                 <div className={Styles.productdetails}>
                     <div className={Styles.pdh}>
-                       <Link to="/Products">Product</Link>  /  Details
+                       <Link to="/Products">Product</Link>  <i class="fa-solid fa-angle-right"></i> <span>Details</span>
                     </div>
                     <div className={Styles.products}>
                         <div className={Styles.productimg}>
@@ -126,6 +127,7 @@ function Productdetailspage() {
 
             <Product productsCount = {3} />
         </div>
+
 
                 </div>
             </div>
