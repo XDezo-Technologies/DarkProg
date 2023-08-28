@@ -102,11 +102,11 @@ function Productdetailspage() {
                             <h3>{product.title}</h3>
                             <p>{product.cost}</p>
 
-                            <button>BuyNow</button> <br />
+                          <button className={Styles.btn}>Buy Now</button>
 
-                            <button>Add to cart</button>
+                            <button className={Styles.btn1}>Add to cart</button>
 
-                            <p>Categories: E-commerce</p>
+                            <h4>Categories: E-commerce</h4>
 
 
                         </div>

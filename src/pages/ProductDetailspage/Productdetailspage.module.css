@@ -25,6 +25,17 @@
     
 }
 
+.productd h3{
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 1rem;
+}
+
+.productd h4{
+    font-size: 18px;
+    font-weight:400;
+    padding-top: 1rem;
+}
 
 .productd button{
     margin-top: 1rem;
@@ -72,4 +83,18 @@
     
 }
 
+.btn{
+    padding: 12px 70px;
+    font-size: 18px;
+    background-color: #F57C51;
+    color: white;
+    border-radius: 0.5rem;
+}
 
+.btn1{
+    font-size: 15px;
+    background-color: #efa836;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
