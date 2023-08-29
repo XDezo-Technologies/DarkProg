@@ -155,7 +155,7 @@ function Blog_detail() {
           image: blog3,
           image1: profile,
           title : "Graphic Designer",
-          desc : "Frameworks are ready-to-use collections of libraries, modules, and features that are built on top of other languages.",
+          desc : "Frameworks are ready-to-use collections of libraries, modules, and features that are built on top of other languages.  ",
           name : "Alishma Sherchan",
           postdate : "July 2023",
         },
@@ -184,6 +184,7 @@ function Blog_detail() {
                         <div className={Styles.details}>
                             <h1>{blogdetail.title}</h1>
                             <p>{blogdetail.desc}</p>
+                            <h4>- {blogdetail.name}</h4>
 
                             <div className={Styles.message_box}>
                                 <form action="">

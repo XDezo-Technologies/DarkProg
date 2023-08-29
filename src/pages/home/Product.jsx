@@ -84,7 +84,7 @@ function Product(props) {
         {
             image: website1,
             title : "Porfoloio website",
-            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
+            desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images. ",
             cost : "NRP. 2500/Year",
         },
       ];
@@ -108,7 +108,10 @@ function Product(props) {
                         <div className={Styles.title1}>
                             <Link to={`/Productdetailspage/${index}`}>{item.title}</Link>
                         </div>
-                        <div className={Styles.description1}>{item.desc}</div>
+                        <div className={Styles.description1}>{item.desc.split(' ').slice(0, 25).join(' ')}</div>
+
+                        
+
                         <div className={Styles.cost}>{item.cost}</div>
                     </div>
                 </div>
