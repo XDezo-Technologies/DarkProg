@@ -7,7 +7,9 @@ span a{
 }
 
 .contain{
-    padding: 30px 90px ;
+    padding: 15px 90px ;
+    background-color: #E9E9E9;
+    margin: 2rem 0 0 0 ;
 }
 
 .info{
@@ -81,7 +83,7 @@ span a{
       width: 300px;
       padding: 10px;
       margin: 0 0 35px 0;
-      border: 1px solid #ccc;
+      /* border: 1px solid #ccc; */
       border-radius: 5px;
     }
 
@@ -104,6 +106,7 @@ span a{
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    padding: 15px;
 }
 
 .footer{
@@ -140,6 +143,7 @@ ul{
     list-style-type: none;
 }
 
+
 .darkprog{
     font-size: 40px;
 }
@@ -175,4 +179,8 @@ ul{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 50px;
+}
+
+.info, .form, .address, .email{
+  font-size: 18px;
 }

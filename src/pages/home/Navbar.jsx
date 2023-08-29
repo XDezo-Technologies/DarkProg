@@ -54,7 +54,7 @@ function Navbar({ backgroundColor }) {
         
         
         <div className={Styles.profile}>
-          <BsFillPersonFill className={Styles.icons} />
+          <Link to="/login"> <BsFillPersonFill className={Styles.icons} /></Link>
           <BsCart3 className={Styles.icons} />
         </div>
 

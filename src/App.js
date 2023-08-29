@@ -13,6 +13,9 @@ import Blog_detail from './pages/Blog_detail/Blog_detail';
 import Payment from './pages/payment/Payment';
 import products from './pages/home/Product';
 
+import LoginPage from './pages/LoginPage/LoginPage';
+import Register from './pages/RegisterPage/Register';
+
 function App() {
   return (
     <>
@@ -32,6 +35,8 @@ function App() {
           <Route path="/productdetailspage/:productId" Component={Productdetailspage} products={products} />
           <Route path='/blog_detail/:blogId' Component={Blog_detail} />
           <Route path='/payment' Component={Payment} />
+          <Route path='/login' Component={LoginPage} />
+          <Route path='/register' Component={Register} />
 
         </Routes>
     </BrowserRouter>

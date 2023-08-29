@@ -44,7 +44,7 @@ function Products() {
             </div>
           </div>
           <div className={Styles.product}>
-            <Product productsCount = {displayCount}  searchQuery={searchQuery}/>
+            <Product productsCount = {displayCount}  searchQuery={searchQuery} />
           </div>
 
           <div className={Styles.btn}>
