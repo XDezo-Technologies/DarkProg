@@ -169,7 +169,7 @@ function Blog_detail() {
                 <div className={Styles.container}>
 
                     <div className={Styles.leftbar}>
-                        <img src={blogs} alt="" />
+                        <img src={blogdetail.image} alt="" />
                         <div className={Styles.details}>
                             <h1>{blogdetail.title}</h1>
                             <p>{blogdetail.desc}</p>
