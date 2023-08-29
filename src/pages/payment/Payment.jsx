@@ -3,7 +3,8 @@ import Styles from './Payment.module.css'
 import Footer from '../home/Footer';
 import Navbar from '../home/Navbar';
 import payment from '../../images/payment.png';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 function Payment() {
 
@@ -27,12 +28,14 @@ function Payment() {
   ];
 
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
+const navigate = useNavigate();
+    
   return (
 
     <div className={Styles.pay}>
       <Navbar backgroundColor="black" />
       <div className={Styles.payment}>
-        <div><Link to="/productdetailspage">Product details</Link><i class="fa-solid fa-angle-right"></i><span> Payment </span> </div>
+        <div className={Styles.back}><div className={Styles.pd} onClick={() => navigate(-1)}>Product details</div><i class="fa-solid fa-angle-right"></i><span> Payment </span> </div>
         <div className={Styles.method}>Select a Payment Method</div>
       </div>
 
@@ -128,4 +131,5 @@ function Payment() {
     </div>
   )
 }
+
 export default Payment;

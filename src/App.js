@@ -32,7 +32,7 @@ function App() {
           <Route path='/team' Component={Team} />
           <Route path='/vision' Component={Vision} />
           <Route path='/mission' Component={Mission} />
-          <Route path="/productdetailspage/:productId" Component={Productdetailspage} products={products} />
+          <Route path="/productdetailspage/:productId"  Component={Productdetailspage} products={products} />
           <Route path='/blog_detail/:blogId' Component={Blog_detail} />
           <Route path='/payment' Component={Payment} />
           <Route path='/login' Component={LoginPage} />

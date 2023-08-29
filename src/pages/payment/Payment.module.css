@@ -91,6 +91,14 @@
 .btn2{
     margin-top: 28px;
 }
+.back{
+    display: flex;
+    gap: 5px;
+}
+
+.pd{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 756px) {
     .paymentdetail, .paymentdetail1, .paymentdetail2, .paymentdetail3{
