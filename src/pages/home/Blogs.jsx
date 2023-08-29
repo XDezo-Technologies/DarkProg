@@ -182,7 +182,7 @@ function Blogs(props) {
                         
                         <Link to={`/Blog_detail/${index}`}><div className={Styles.title1}>{item.title}</div></Link>
                         
-                        <div className={Styles.description1}>{item.desc}</div>
+                        <div className={Styles.description1}>{item.desc.split(' ').slice(0, 25).join(' ')}</div>
                         <div className={Styles.postedby}>
                             <div>
                                 <img className={Styles.pic} src={item.image1} alt="" />

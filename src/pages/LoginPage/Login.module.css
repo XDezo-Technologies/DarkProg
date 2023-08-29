@@ -60,7 +60,7 @@ input[type="password"] {
     font-size: 14px;
 }
 
-.btn3{
+.btn4{
     padding: 10px 100px;
     background-color: #F57C51;
     color: #fcfbfb;
@@ -69,13 +69,14 @@ input[type="password"] {
     cursor: pointer;
     font-size: 18px;
     margin-top: 20px;
+    width: 100%;
 }
 
-.btn3:hover {
+.btn4:hover {
     background-color: #f39925;
     
 }
 
-.btn3:active {
+.btn4:active {
     background-color: #2bc922;
 }

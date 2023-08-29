@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
             <p>Forgot Password?</p>
 
-            <button type='submit' className={Styles.btn3}>Login</button>
+            <Link to = "/"><button type='submit' className={Styles.btn4}>Login</button></Link>
 
             <h4>Don't have an account? <span><Link to = "/register">Register</Link></span></h4>
 
