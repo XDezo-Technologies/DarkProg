@@ -11,6 +11,7 @@ import website8 from '../../images/website8.png';
 import website9 from '../../images/website9.png';
 import website10 from '../../images/website10.png';
 import {Link} from 'react-router-dom';
+import { CartProvider } from 'react-use-cart';
 
 function Product(props) {
 
@@ -96,6 +97,7 @@ function Product(props) {
           .slice(0, props.productsCount);
 
     return (
+      <CartProvider>
         <div className={Styles.product}>
             {displayedProducts.map((item, index) => (
                 <div key={index} className={Styles.container} style={{
@@ -117,6 +119,7 @@ function Product(props) {
                 </div>
             ))}
         </div>
+        </CartProvider>
     );
   }
 

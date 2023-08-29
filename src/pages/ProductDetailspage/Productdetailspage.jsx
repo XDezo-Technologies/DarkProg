@@ -13,6 +13,8 @@ import website7 from '../../images/website7.png';
 import website8 from '../../images/website8.png';
 import website9 from '../../images/website9.png';
 import website10 from '../../images/website10.png';
+import { useCart } from 'react-use-cart';
+
 
 import {Link, useParams} from 'react-router-dom';
 import Product from '../home/Product';
@@ -95,26 +97,34 @@ function Productdetailspage() {
 
       const { productId } = useParams();
       const product = products[productId];
-    return (
 
+      const { addItem } = useCart();
+      const addToCart = (product) => {
+        addItem(product);
+      };
+
+      console.log("addToCart function:", addToCart);
+    return (
         <div className={Styles.header}>
             <div className={Styles.navigation}>
                 <Navbar backgroundColor="Black" />
                 <div className={Styles.productdetails}>
                     <div className={Styles.pdh}>
-                       <Link to="/Products">Product</Link>  <i class="fa-solid fa-angle-right"></i> <span>Details</span>
+                       <Link to="/Products">Product</Link>  <i className="fa-solid fa-angle-right"></i> <span>Details</span>
                     </div>
                     <div className={Styles.products}>
                         <div className={Styles.productimg}>
                             <img src={product.image} alt="" />
                         </div>
+                    
                         <div className={Styles.productd}>
                             <h3>{product.title}</h3>
                             <p>{product.cost}</p>
 
                           <Link to ="/payment"> <button className={Styles.btn}>Buy Now</button></Link>
 
-                            <button className={Styles.btn1}>Add to cart</button>
+                          <button className={Styles.btn1} onClick={addToCart}>Add to cart</button>
+
 
                             <h4>Categories: E-commerce</h4>
 

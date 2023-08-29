@@ -12,7 +12,7 @@ import Productdetailspage from './pages/ProductDetailspage/Productdetailspage';
 import Blog_detail from './pages/Blog_detail/Blog_detail';
 import Payment from './pages/payment/Payment';
 import products from './pages/home/Product';
-
+import Cart from './pages/cart/Cart';
 import LoginPage from './pages/LoginPage/LoginPage';
 import Register from './pages/RegisterPage/Register';
 
@@ -37,7 +37,7 @@ function App() {
           <Route path='/payment' Component={Payment} />
           <Route path='/login' Component={LoginPage} />
           <Route path='/register' Component={Register} />
-
+          <Route path="/cart" component={Cart} /> 
         </Routes>
     </BrowserRouter>
     </>
