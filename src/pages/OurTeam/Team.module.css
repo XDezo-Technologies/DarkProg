@@ -28,12 +28,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
     padding: 30px 90px;
+    gap: 30px;
+    
 }
 
 .profile {
-    flex: 1 0 250px;
+    flex: 0.5 0 250px;
     display: flex;
     justify-content: flex-start;
 }
@@ -89,6 +90,7 @@
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    padding-bottom: 40px;
   }
 
   .detail{
@@ -116,5 +118,12 @@
       align-items: center;
     }
 
+
+  }
+
+  @media screen and (max-width: 912px) {
+    .message{
+      padding: 50px 90px;
+    }
   }
 
