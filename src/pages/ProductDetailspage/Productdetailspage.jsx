@@ -112,7 +112,7 @@ function Productdetailspage() {
                             <h3>{product.title}</h3>
                             <p>{product.cost}</p>
 
-                          <button className={Styles.btn}>Buy Now</button>
+                          <Link to ="/payment"> <button className={Styles.btn}>Buy Now</button></Link>
 
                             <button className={Styles.btn1}>Add to cart</button>
 

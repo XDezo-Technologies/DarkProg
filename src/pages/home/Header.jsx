@@ -6,6 +6,8 @@ import Navbar from './Navbar';
 import Product from './Product';
 import { AiOutlineRight } from 'react-icons/ai';
 import {Link} from 'react-router-dom';
+import Subscription from './Subscription';
+
 
 
 function Header() {
@@ -69,7 +71,7 @@ function Header() {
             <Link to="/Blog"><button>View More <AiOutlineRight /></button></Link>
           </div>
         </div>
-
+        < Subscription/>
         <Contacts />
         <Footer />
       </>
