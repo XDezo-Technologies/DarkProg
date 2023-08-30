@@ -17,9 +17,8 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import Register from './pages/RegisterPage/Register';
 
 function App() {
-  const [cart, setCart] = useState([]); // Initialize cart state
+  const [cart, setCart] = useState([]); 
 
-  // Function to handle adding products to the cart
   const addToCart = (product) => {
     setCart([...cart, product]);
   };
@@ -43,22 +42,11 @@ function App() {
           <Route path='/payment' Component={Payment} />
           <Route path='/login' Component={LoginPage} />
           <Route path='/register' Component={Register} />
-          <Route path="/Cart" component={() => <Cart cart={cart} />} />
+          <Route path='/cart' Component={() => <Cart cart={cart} />} />
+          {/* <Route path="/cart" component={() => <Cart cart={cart} />} /> */}
         </Routes>
     </BrowserRouter>
     </>
-
-    
-
-
-
-
-
-
-
-
-
-
   );
 }
 

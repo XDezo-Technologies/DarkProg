@@ -52,7 +52,6 @@ function Blog() {
                     <button onClick={loadMoreBlogs}>View More <AiOutlineRight /></button>
                 </div>
             </div>
-
             <Footer />
         </>
     );

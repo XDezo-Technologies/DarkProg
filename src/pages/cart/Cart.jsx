@@ -7,7 +7,7 @@ function Cart({ cart }) {
         <ul>
           {cart.map((product, index) => (
             <li key={index}>
-              {product.name} - ${product.price}
+              {product.title} - ${product.cost}
             </li>
           ))}
         </ul>

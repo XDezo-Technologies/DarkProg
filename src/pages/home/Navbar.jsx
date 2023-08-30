@@ -55,7 +55,7 @@ function Navbar({ backgroundColor }) {
         
         <div className={Styles.profile}>
           <Link to="/login"> <BsFillPersonFill className={Styles.icons} /></Link>
-          <Link to="/cart"><BsCart3 className={Styles.icons} /> </Link>
+          <Link to="/cart"><BsCart3 className={Styles.icons} /></Link>
         </div>
 
         <div className={Styles.Icon} onClick={() => setShowMenu(!showMenu)} >
