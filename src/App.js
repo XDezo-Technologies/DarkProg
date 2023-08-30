@@ -11,12 +11,18 @@ import Mission from './pages/Mission/Mission';
 import Productdetailspage from './pages/ProductDetailspage/Productdetailspage';
 import Blog_detail from './pages/Blog_detail/Blog_detail';
 import Payment from './pages/payment/Payment';
-import products from './pages/home/Product';
 import Cart from './pages/cart/Cart';
+import { useState } from 'react';
 import LoginPage from './pages/LoginPage/LoginPage';
 import Register from './pages/RegisterPage/Register';
 
 function App() {
+  const [cart, setCart] = useState([]); // Initialize cart state
+
+  // Function to handle adding products to the cart
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
   return (
     <>
       <BrowserRouter>
@@ -32,12 +38,12 @@ function App() {
           <Route path='/team' Component={Team} />
           <Route path='/vision' Component={Vision} />
           <Route path='/mission' Component={Mission} />
-          <Route path="/productdetailspage/:productId"  Component={Productdetailspage} products={products} />
+          <Route path="/productdetailspage/:productId"  Component={() => <Productdetailspage addToCart={addToCart} />} />
           <Route path='/blog_detail/:blogId' Component={Blog_detail} />
           <Route path='/payment' Component={Payment} />
           <Route path='/login' Component={LoginPage} />
           <Route path='/register' Component={Register} />
-          <Route path="/cart" component={Cart} /> 
+          <Route path="/Cart" component={() => <Cart cart={cart} />} />
         </Routes>
     </BrowserRouter>
     </>
