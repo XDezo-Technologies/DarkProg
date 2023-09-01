@@ -95,6 +95,8 @@ function Productdetailspage({ addToCart }) {
       const { productId } = useParams();
       const product = products[productId];
 
+
+
     return (
         <div className={Styles.header}>
             <div className={Styles.navigation}>
@@ -114,8 +116,7 @@ function Productdetailspage({ addToCart }) {
 
                           <Link to ="/payment"> <button className={Styles.btn}>Buy Now</button></Link>
 
-                          <button className={Styles.btn1} onClick={() => addToCart(product)}>Add to Cart</button>
-
+                          <button className={Styles.btn1} onClick={() => { addToCart(product); alert('Product added to cart'); }}>Add to Cart</button>
 
                             <h4>Categories: E-commerce</h4>
 
