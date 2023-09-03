@@ -23,3 +23,18 @@
     height: 150px;
     width: 250px;
 }
+
+.cart_product_name{
+    font-size: 25px;
+}
+
+.cart_product_name, .cart_product_cost{
+    font-weight: bold;
+}
+
+.cart_product_detail, .cart_action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
