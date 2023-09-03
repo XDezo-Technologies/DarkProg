@@ -19,6 +19,7 @@ import blog9 from '../../images/blog9.png';
 import blog10 from '../../images/blog10.png';
 import blog11 from '../../images/blog11.png';
 import blog12 from '../../images/blog12.png';
+import BackToTopButton from '../backToTop/Backtotop';
 
 
 function Blog_detail() {
@@ -216,6 +217,7 @@ function Blog_detail() {
             </div>
 
             <Footer />
+            <BackToTopButton />
         </>
     );
 }

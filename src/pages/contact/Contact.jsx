@@ -3,6 +3,7 @@ import Navbar from '../home/Navbar';
 import Footer from '../home/Footer';
 import { BsFacebook } from 'react-icons/bs';
 import { AiOutlineInstagram, AiFillTwitterSquare, AiFillLinkedin } from 'react-icons/ai';
+import BackToTopButton from '../backToTop/Backtotop';
 
 function Contact() {
     return (
@@ -49,6 +50,7 @@ function Contact() {
         </div>
 
         <Footer />
+        <BackToTopButton />
         </>
     );
 }

@@ -15,6 +15,7 @@ import website9 from '../../images/website9.png';
 import website10 from '../../images/website10.png';
 import {Link, useParams} from 'react-router-dom';
 import Product from '../home/Product';
+import BackToTopButton from '../backToTop/Backtotop';
 
 function Productdetailspage({ addToCart }) {
     const products = [
@@ -141,9 +142,10 @@ function Productdetailspage({ addToCart }) {
         </div>
 
 
-                </div>
-            </div>
+        </div>
+        </div>
             <Footer/>
+            <BackToTopButton />
         </div>
     );
 }

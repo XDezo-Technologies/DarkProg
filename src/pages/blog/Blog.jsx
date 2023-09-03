@@ -5,6 +5,7 @@ import { AiOutlineRight } from 'react-icons/ai';
 import Blogs from '../home/Blogs';
 import Footer from '../home/Footer';
 import { BiSearch } from 'react-icons/bi';
+import BackToTopButton from '../backToTop/Backtotop';
 
 
 function Blog() {
@@ -53,6 +54,7 @@ function Blog() {
                 </div>
             </div>
             <Footer />
+            <BackToTopButton />
         </>
     );
 }

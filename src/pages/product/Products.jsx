@@ -5,6 +5,7 @@ import { AiOutlineRight } from 'react-icons/ai';
 import { BiSearch } from 'react-icons/bi';
 import Product from '../home/Product';
 import Footer from '../home/Footer';
+import BackToTopButton from '../backToTop/Backtotop';
 
 
 
@@ -53,6 +54,7 @@ function Products() {
         </div>
         
         <Footer/>
+        <BackToTopButton />
       </>
     );
   }

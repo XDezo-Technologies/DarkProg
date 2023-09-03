@@ -1,0 +1,14 @@
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F57C51;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .back-to-top-button:hover {
+    background-color: #f3a92a;
+  }
+  

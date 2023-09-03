@@ -4,6 +4,7 @@ import Footer from '../home/Footer';
 import Navbar from '../home/Navbar';
 import payment from '../../images/payment.png';
 import { useNavigate } from 'react-router-dom';
+import BackToTopButton from '../backToTop/Backtotop';
 
 
 function Payment() {
@@ -128,6 +129,7 @@ const navigate = useNavigate();
       )}
 
       <Footer />
+      <BackToTopButton />
     </div>
   )
 }

@@ -5,6 +5,7 @@ import about from '../../images/about.png';
 import Footer from '../home/Footer';
 import alishma from '../../images/alishma.png'
 import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
+import BackToTopButton from '../backToTop/Backtotop';
 
 function About() {
 
@@ -93,7 +94,7 @@ function About() {
         </div>
 
         <Footer />
-
+        <BackToTopButton />
     </>
   )
 }
