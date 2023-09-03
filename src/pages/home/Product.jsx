@@ -19,73 +19,73 @@ function Product(props) {
           image: webproduct,
           title : "Trend website Template",
           desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-          cost : "NRP. 2500/Year",
+          cost : 2500,
         },
         {
             image: website1,
             title : "Ecommerce website",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-            cost : "NRP. 2500/Year",
+            cost : 2500,
         },
         {
             image: website2,
             title : "Pure html css",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-            cost : "NRP. 2500/Year",
+            cost : 2500,
         },
         {
           image: website3,
           title : "React project",
           desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-          cost : "NRP. 2500/Year",
+          cost : 2500,
         },
         {
             image: website4,
             title : "Wordpress Template",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-            cost : "NRP. 2500/Year",
+            cost : 2500,
         },
         {
             image: website5,
             title : "Django Project",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-            cost : "NRP. 2500/Year",
+            cost : 2500,
         },
         {
           image: website6,
           title : "Travel recording website",
           desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-          cost : "NRP. 2500/Year",
+          cost : 2500,
         },
         {
             image: website7,
             title : "Sweet Memories",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-            cost : "NRP. 2500/Year",
+            cost : 2500,
         },
         {
             image: website8,
             title : "React Restruent Management system",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-            cost : "NRP. 2500/Year",
+            cost : 2500,
         },
         {
           image: website9,
           title : "School Mangement System",
           desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-          cost : "NRP. 2500/Year",
+          cost : 2500,
         },
         {
             image: website10,
             title : "Manage inventory",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
-            cost : "NRP. 2500/Year",
+            cost : 2500,
         },
         {
             image: website1,
             title : "Porfoloio website",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images. ",
-            cost : "NRP. 2500/Year",
+            cost : 2500,
         },
       ];
 
@@ -112,7 +112,7 @@ function Product(props) {
 
                         
 
-                        <div className={Styles.cost}>{item.cost}</div>
+                        <div className={Styles.cost}>NPR. {item.cost}/Year</div>
                     </div>
                 </div>
             ))}
