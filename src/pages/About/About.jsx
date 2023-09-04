@@ -48,7 +48,7 @@ function About() {
                 <div className={Styles.heading}>
                     About Us
                 </div>
-                <p>
+                <p className={Styles.par}>
                 “I hope this message finds you well. First and foremost, I want to express my gratitude for your hard work and dedication in ensuring that our clients receive top-notch content for their websites. Your efforts play a crucial role in the success of our e-commerce business."
                 </p>
             </div>
