@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
  function LoginPage() {
   return (
-    <div className={Styles.logincontainer}>
+<div className={Styles.body}>
+<div className={Styles.logincontainer}>
         <h1>Login</h1>
         <form action="" className={Styles.loginform}>
             <label className={Styles.lab} htmlFor="username">Username:</label>
@@ -22,6 +23,7 @@ import { Link } from 'react-router-dom';
         </form>
 
     </div>
+</div>
   )
 }
 
