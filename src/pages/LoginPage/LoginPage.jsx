@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
  function LoginPage() {
   return (
-
     <div className={Styles.logincontainer}>
         <h1>Login</h1>
         <form action="" className={Styles.loginform}>
@@ -14,26 +13,14 @@ import { Link } from 'react-router-dom';
             <label className={Styles.lab} htmlFor="username">Password:</label>
             <input className={Styles.intt} type="password" id='password' placeholder='Enter your password..' required />
 
-    <div className={Styles.body}>
-          <div className={Styles.logincontainer}>
-            <h1>Login</h1>
-            <form action="" className={Styles.loginform}>
-                <label htmlFor="username">Username:</label>
-                <input type="text" id='username' placeholder='Enter your username..' required />
+            <p>Forgot Password?</p>
 
-                <label htmlFor="username">Password:</label>
-                <input type="password" id='password' placeholder='Enter your password..' required />
+            <Link to = "/"><button type='submit' className={Styles.btn4}>Login</button></Link>
 
+            <h4>Don't have an account? <span><Link to = "/register">Register</Link></span></h4>
 
-                <p>Forgot Password?</p>
+        </form>
 
-                <Link to = "/"><button type='submit' className={Styles.btn4}>Login</button></Link>
-
-                <h4>Don't have an account? <span><Link to = "/register">Register</Link></span></h4>
-
-            </form>
-
-        </div>
     </div>
   )
 }
