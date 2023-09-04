@@ -16,12 +16,16 @@ import { useState } from 'react';
 import LoginPage from './pages/LoginPage/LoginPage';
 import Register from './pages/RegisterPage/Register';
 
+
 function App() {
   const [cart, setCart] = useState([]); 
 
   const addToCart = (product) => {
     setCart([...cart, product]);
   };
+
+  const cartItemCount = cart.length;
+  
   return (
     <>
       <BrowserRouter>
@@ -42,7 +46,7 @@ function App() {
           <Route path='/payment' Component={Payment} />
           <Route path='/login' Component={LoginPage} />
           <Route path='/register' Component={Register} />
-          <Route path='/cart' Component={() => <Cart cart={cart} />} />
+          <Route path='/cart' Component={() => <Cart cart={cart} cartItemCount={cartItemCount} />} />
           {/* <Route path="/cart" component={() => <Cart cart={cart} />} /> */}
         </Routes>
     </BrowserRouter>

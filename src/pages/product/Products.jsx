@@ -7,8 +7,6 @@ import Product from '../home/Product';
 import Footer from '../home/Footer';
 import BackToTopButton from '../backToTop/Backtotop';
 
-
-
 function Products() {
   const [displayCount, setDisplayCount] = useState(6); // Initial display count
   const [searchQuery, setSearchQuery] = useState('');
@@ -58,10 +56,6 @@ function Products() {
       </>
     );
   }
-
-  
-
-
 
 export default Products;
   

@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../home/Navbar';
 import './Cart.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../home/Footer';
 import BackToTopButton from '../backToTop/Backtotop';
 
-function Cart({ cart }) {
+function Cart({ cart}) {
   const navigate = useNavigate();
 
-  const [visible, setVisible] = useState(Array(cart.length).fill(true));
+  const initialVisible = JSON.parse(localStorage.getItem('cartVisibility')) || Array(cart.length).fill(true);
+  const [visible, setVisible] = useState(initialVisible);
+
+  useEffect(() => {
+    localStorage.setItem('cartVisibility', JSON.stringify(visible));
+  }, [visible]);
 
   const removeElement = (index) => {
     const updatedVisible = [...visible];
@@ -20,7 +25,7 @@ function Cart({ cart }) {
 
   return (
     <>
-      <Navbar backgroundColor="Black" />
+      <Navbar backgroundColor="Black" cartItemCount={filteredCart.length} />
       <div className='cart'>
         <div className='cart_back'>
           <div onClick={() => navigate(-1)}>Product details</div>
