@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
     <div className={Styles.logincontainer}>
         <h1>Login</h1>
         <form action="" className={Styles.loginform}>
-            <label htmlFor="username">Username:</label>
-            <input type="text" id='username' placeholder='Enter your username..' required />
+            <label className={Styles.lab} htmlFor="username">Username:</label>
+            <input className={Styles.intt} type="text" id='username' placeholder='Enter your username..' required />
 
-            <label htmlFor="username">Password:</label>
-            <input type="password" id='password' placeholder='Enter your password..' required />
+            <label className={Styles.lab} htmlFor="username">Password:</label>
+            <input className={Styles.intt} type="password" id='password' placeholder='Enter your password..' required />
 
             <p>Forgot Password?</p>
 

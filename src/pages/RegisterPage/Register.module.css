@@ -14,8 +14,10 @@ body {
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 500px;
     height: 650px;
+    
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -41,12 +43,12 @@ form:nth-last-child(){
     flex-direction: column;
 }
 
-label {
+.lab {
     margin-bottom: 7px;
 }
 
-input[type="text"],
-input[type="password"] {
+.int[type="text"],
+.int[type="password"] {
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
