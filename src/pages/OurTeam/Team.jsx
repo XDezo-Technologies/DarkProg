@@ -7,6 +7,7 @@ import Member from './Member';
 import t1 from '../../images/t1.png';
 import t2 from '../../images/t2.png';
 import about from '../../images/about.png';
+import BackToTopButton from '../backToTop/Backtotop';
 
 
 function Team() {
@@ -57,6 +58,7 @@ function Team() {
         
 
         <Footer />
+        <BackToTopButton />
         </>
   )
 }

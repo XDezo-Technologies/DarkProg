@@ -1,4 +1,4 @@
-body {
+.body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -14,9 +14,14 @@ body {
     padding: 50px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
     height: 500px;  
     display: flex;
     flex-direction: column; 
+=======
+    width: 500px;
+    
+>>>>>>> 1f40a9c65dd17ffea3a834ba28ccdb032633e133
 }
 
 form:nth-last-child(){
@@ -79,4 +84,20 @@ form:nth-last-child(){
 
 .btn4:active {
     background-color: #2bc922;
+}
+
+@media screen and (max-width: 768px) {
+    .logincontainer {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .btn4 {
+        padding: 10px 50px;
+    }
+
+    .body {
+        margin: 0;
+        padding: 0;
+    }
 }

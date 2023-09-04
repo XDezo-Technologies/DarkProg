@@ -5,7 +5,7 @@ import { AiOutlineDown } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 
-function Navbar({ backgroundColor }) {
+function Navbar({ backgroundColor, cartItemCount }) {
   const menu = ['Home', 'Products', 'Services', 'Blog', 'Company', 'Contact'];
   const dropdownmenu = ['About Us', 'Team', 'Mission', 'Vision'];
 
@@ -55,7 +55,7 @@ function Navbar({ backgroundColor }) {
         
         <div className={Styles.profile}>
           <Link to="/login"> <BsFillPersonFill className={Styles.icons} /></Link>
-          <BsCart3 className={Styles.icons} />
+          <Link to="/cart"><BsCart3 className={Styles.icons} /><span className="cart-count">{cartItemCount}</span></Link>
         </div>
 
         <div className={Styles.Icon} onClick={() => setShowMenu(!showMenu)} >

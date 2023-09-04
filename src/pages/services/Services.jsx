@@ -4,6 +4,7 @@ import Styles from './Services.module.css'
 import Footer from '../home/Footer'
 import { Link } from 'react-router-dom';
 import { AiFillCaretDown } from 'react-icons/ai';
+import BackToTopButton from '../backToTop/Backtotop';
 
 function Services() {
 
@@ -186,6 +187,7 @@ function Services() {
       </div>
 
       <Footer />
+      <BackToTopButton />
 
     </>
   );

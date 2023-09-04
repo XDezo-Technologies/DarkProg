@@ -3,6 +3,7 @@ import Navbar from '../home/Navbar'
 import Styles from './Mission.module.css';
 import mission from '../../images/mission.png';
 import Footer from '../home/Footer';
+import BackToTopButton from '../backToTop/Backtotop';
 
 function Mission() {
     return (
@@ -40,6 +41,7 @@ function Mission() {
             </div>
         </div>
         <Footer/>
+        <BackToTopButton />
         
         </>
        

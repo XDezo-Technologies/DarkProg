@@ -3,6 +3,7 @@ import Navbar from '../home/Navbar'
 import Styles from '../Mission/Mission.module.css';
 import vision from '../../images/vision.png';
 import Footer from '../home/Footer';
+import BackToTopButton from '../backToTop/Backtotop';
 
 export default function Vision() {
     return (
@@ -46,6 +47,7 @@ export default function Vision() {
             </div>
         </div>
         <Footer/>
+        <BackToTopButton />
         
         </>
         
