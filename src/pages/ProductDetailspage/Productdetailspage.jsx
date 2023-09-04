@@ -119,6 +119,7 @@ function Productdetailspage({ addToCart }) {
 
                           <button className={Styles.btn1} onClick={() => { addToCart(product); alert('Product added to cart'); }}>Add to Cart</button>
 
+                           <button><a href="https://p.w3layouts.com/demos_new/template_demo/03-03-2022/finagency-liberty-demo_Free/209759279/web/index.html">Demo</a></button>
                             <h4>Categories: E-commerce</h4>
 
 
