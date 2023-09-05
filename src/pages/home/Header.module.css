@@ -160,6 +160,15 @@ button{
     opacity: 46%;
 }
 
+.datetime{
+    display: flex;
+    gap: 60px;
+}
+
+.time{
+    opacity: 60%;
+}
+
 @media screen and (max-width: 768px) {
     .product_section, .product_section1, .work{
         padding: 30px 10px;

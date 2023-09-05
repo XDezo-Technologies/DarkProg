@@ -20,72 +20,84 @@ function Product(props) {
           title : "Trend website Template",
           desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
           cost : 2500,
+          date : "Jan 1, 2023"
         },
         {
             image: website1,
             title : "Ecommerce website",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
             cost : 2500,
+            date : "Jan 1, 2023"
         },
         {
             image: website2,
             title : "Pure html css",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
             cost : 2500,
+            date : "Jan 1, 2023"
         },
         {
           image: website3,
           title : "React project",
           desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
           cost : 2500,
+          date : "Jan 1, 2023"
         },
         {
             image: website4,
             title : "Wordpress Template",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
             cost : 2500,
+            date : "Jan 1, 2023"
         },
         {
             image: website5,
             title : "Django Project",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
             cost : 2500,
+            date : "Jan 1, 2023"
         },
         {
           image: website6,
           title : "Travel recording website",
           desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
           cost : 2500,
+          date : "Jan 1, 2023"
         },
         {
             image: website7,
             title : "Sweet Memories",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
             cost : 2500,
+            date : "Jan 1, 2023"
         },
         {
             image: website8,
             title : "React Restruent Management system",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
             cost : 2500,
+            date : "Jan 1, 2023"
         },
         {
           image: website9,
           title : "School Mangement System",
           desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
           cost : 2500,
+          date : "Jan 1, 2023"
         },
         {
             image: website10,
             title : "Manage inventory",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images.",
             cost : 2500,
+            date : "Jan 1, 2023"
         },
         {
             image: website1,
             title : "Porfoloio website",
             desc : "Trend is an attractive fashion website template with a jaw-dropping animated zoom-in transition of banner images. ",
             cost : 2500,
+            date : "Jan 1, 2023"
         },
       ];
 
@@ -109,10 +121,10 @@ function Product(props) {
                             <Link to={`/Productdetailspage/${index}`}>{item.title}</Link>
                         </div>
                         <div className={Styles.description1}>{item.desc.split(' ').slice(0, 25).join(' ')}</div>
-
-                        
-
-                        <div className={Styles.cost}>NPR. {item.cost}/Year</div>
+                        <div className={Styles.datetime}>
+                          <div className={Styles.cost}>NPR. {item.cost}/Year</div>
+                          <div className={Styles.time}>{item.date}</div>
+                        </div>
                     </div>
                 </div>
             ))}

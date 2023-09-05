@@ -47,7 +47,6 @@ function App() {
           <Route path='/login' Component={LoginPage} />
           <Route path='/register' Component={Register} />
           <Route path='/cart' Component={() => <Cart cart={cart} cartItemCount={cartItemCount} />} />
-          {/* <Route path="/cart" component={() => <Cart cart={cart} />} /> */}
         </Routes>
     </BrowserRouter>
     </>
