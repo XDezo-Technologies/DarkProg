@@ -94,9 +94,7 @@ function Productdetailspage({ addToCart }) {
       ];
 
       const { productId } = useParams();
-      const product = products[productId];
-
-
+        const product = products[parseInt(productId, 10)];
 
     return (
         <div className={Styles.header}>

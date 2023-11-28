@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../home/Footer';
 import BackToTopButton from '../backToTop/Backtotop';
 
-function Cart({ cart}) {
+function Cart({ cart }) {
   const navigate = useNavigate();
 
   const initialVisible = JSON.parse(localStorage.getItem('cartVisibility')) || Array(cart.length).fill(true);
@@ -30,7 +30,7 @@ function Cart({ cart}) {
         <div className='cart_back'>
           <div onClick={() => navigate(-1)}>Product details</div>
           <i className="fa-solid fa-angle-right"></i>
-          <span> Payment </span>
+          <span> Your Cart </span>
         </div>
         <div>
           <h1>Your Cart</h1>
